@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Erstellungsprotokoll</h1>
+<h3>
+--------------------Konfiguration: BillardGL - Win32 Release--------------------
+</h3>
+<h3>Befehlszeilen</h3>
+Erstellen der temporären Datei  "C:\WINDOWS\TEMP\RSP8062.TMP" mit Inhalten
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Release/BillardGL.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"Q:\BillardGL-1.75.08\BillardGL\Benutzerschnittstelle.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP8062.TMP" 
+Erstellen der temporären Datei  "C:\WINDOWS\TEMP\RSP8063.TMP" mit Inhalten
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /profile /machine:I386 /out:"../BillardGL.exe" 
+".\Release\Anzeige.obj"
+".\Release\Beleuchtung.obj"
+".\Release\Benutzerschnittstelle.obj"
+".\Release\BillardGL.obj"
+".\Release\bmp.obj"
+".\Release\createTexture.obj"
+".\Release\Einsetzen.obj"
+".\Release\Handling.obj"
+".\Release\Kamera.obj"
+".\Release\KommandoZeilenParameter.obj"
+".\Release\Kugel.obj"
+".\Release\kugeltabellen.obj"
+".\Release\LA.obj"
+".\Release\LadeScreen.obj"
+".\Release\Menu.obj"
+".\Release\Netzwerk.obj"
+".\Release\Physik.obj"
+".\Release\SchattenKreis.obj"
+".\Release\Schiedsrichter.obj"
+".\Release\Schild.obj"
+".\Release\SpielfeldAufbau.obj"
+".\Release\Textfeld.obj"
+".\Release\Tisch.obj"
+".\Release\Tischfunktionen.obj"
+".\Release\viertelLoch.obj"
+".\Release\Zeit.obj"
+]
+Erstellen der Befehlzeile "link.exe @C:\WINDOWS\TEMP\RSP8063.TMP"
+<h3>Ausgabefenster</h3>
+Kompilierung läuft...
+Benutzerschnittstelle.cpp
+Linker-Vorgang läuft...
+
+
+
+<h3>Ergebnisse</h3>
+BillardGL.exe - 0 Fehler, 0 Warnung(en)
+</pre>
+</body>
+</html>

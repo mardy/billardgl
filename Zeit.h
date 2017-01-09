@@ -1,0 +1,2 @@
+GLint Zeit();
+

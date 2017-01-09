@@ -1,0 +1,12 @@
+void Tischflaeche();
+void TischflaechemitTextur();
+void MittelLochVerkleidung();
+void EckLochVerkleidung();
+void MittelLochInnenverkleidung();
+void EckLochInnenverkleidung();
+void Holzbande(GLfloat, GLint, GLfloat, GLfloat);
+void HolzbandeOT(GLfloat, GLint);
+void Banden(GLint richtung, GLint Multiply);
+void MittelLochRand();
+void EckLochRand();
+void Diamant(GLfloat,GLfloat,GLfloat);

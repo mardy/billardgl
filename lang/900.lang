@@ -1,0 +1,385 @@
+//German 900.lang by Tobias Nopper & Martina Welte
+
+// Titel
+0 BillardGL 1.7
+1 © 2001, 2002 Tobias Nopper • Stefan Disch • Martina Welte
+2 Albert-Ludwigs-Universität Freiburg, Institut für Informatik
+3 http://www.BillardGL.de/
+4 BillardGL comes with absolutely no warranty
+
+//Hauptmenu
+10 Hauptmenu                        
+11 Training
+12 Zwei Spieler
+13 Netzwerkspiel
+14 Einstellungen
+15 Computergegner
+16 Beenden
+17 Hilfe
+
+// Einstellungen
+20 Steuerung
+21 Grafik
+22 Audio
+23 Sprache
+
+//Hilfe
+50 Einführung
+51 Billard-Regeln
+52 Nächste Seite
+53 Vorige Seite
+54 Zurück
+55 Tutorial
+56 Tastenbelegungen
+
+//Allgemein
+100 Zurück
+101 Übernehmen
+102 OK
+103 Abbrechen
+
+//Training
+110 8-Ball
+111 9-Ball
+
+// Zwei Spieler
+120 Spieler 1 :
+121 Spieler 2 :
+
+//Beenden
+160 Ja, Beenden
+
+//Netzwerkspiel
+130 Neues Netzwerkspiel
+131 Spiel beitreten
+132 Warten...
+133 IP-Adresse
+134 Verbinden
+
+//Beenden
+160 Ja, Beenden
+
+//Aus Spiel
+170 Weiterspielen
+171 Tisch verlassen
+
+//Im Spiel
+180 Weiße neu setzen
+181 Betrachten
+182 Zielen
+183 Ausholen
+184 Stoß
+185 hat gewonnen
+186 ist am Tisch
+187 und hat Lageverbesserung
+188 im Kopffeld
+189 Wollen Sie:
+190 Neu Aufbauen
+191 Die 8 Einsetzen
+192 Neues Spiel
+193 Foul
+194 Foul
+195 Foul
+196 Fouls
+197 Fouls
+198 Neue 8-Ball-Aufstellung
+199 Neue 9-Ball-Aufstellung
+
+// Einstellungen - Bedienung
+200 Mausgeschwindigkeit :
+201 Langsam
+202 Standard
+203 Schnell
+204 Sehr Schnell
+205 X-Achse invertiert :
+206 An
+207 Aus
+208 Y-Achse invertiert :
+209 An
+210 Aus
+
+// Einstellungen - Grafik
+220 Ball-Geometrie :
+221 Sehr niedrig
+222 Niedrig
+223 Standard
+224 Hoch
+
+230 Ball-Texturen :
+231 Sehr niedrig
+232 Niedrig
+233 Standard
+234 Hoch
+
+240 Tisch-Texturen :
+241 Sehr niedrig
+242 Niedrig
+243 Standard
+244 Hoch
+245 Aus
+
+250 Menu-Texturen :
+251 Niedrig
+252 Standard
+253 Hoch
+
+260 Reflektionen :
+261 Aus
+262 Ein
+
+270 Bildschirmauflösung :
+271 640x480
+272 800x600
+273 1024x768
+274 1280x1024
+275 1600x1200
+
+280 Farbtiefe :
+281 16 Bit
+282 24 Bit
+283 32 Bit
+
+290 Schatten :
+291 Aus
+292 Ein
+
+295 Texturinterpolation :
+296 Aus
+297 Niedrig
+298 Standard
+299 Hoch
+
+300 Qualität :
+301 Sehr schnell
+302 Schnell
+303 Standard
+304 Hoch
+305 Sehr hoch
+306 Benutzer
+
+310 Hinweis
+311 Die neue Bildschirmauflösung wird erst beim
+312 nächsten Start von BillardGL übernommen.
+
+320 Ambientes Licht :
+321 Ein
+322 Aus
+
+325 Tischbeleuchtung :
+326 1 Lampe
+327 2 Lampen
+328 3 Lampen
+
+330 Color Bleeding :
+331 Ein
+332 Aus
+
+335 FPS-Anzeige :
+336 Ein
+337 Aus
+
+
+// Einstellungen - Audio
+350 Effekt-Lautstärke
+351 Aus
+352 10%
+353 20%
+354 30%
+355 40%
+356 50%
+357 60%
+358 70%
+359 80%
+360 90%
+361 100%
+
+370 Musik-Lautstärke
+371 Aus
+372 10%
+373 20%
+374 30%
+375 40%
+376 50%
+377 60%
+378 70%
+379 80%
+380 90%
+381 100%
+
+
+// Einstellungen - Sprache
+400 Sprache / Language
+
+// Schiedsrichter
+450 Kein korrekter Eröffnungsstoß
+451 Weiße beim Eröffnungsstoß versenkt
+452 Keine Kugel berührt
+453 Keine korrekte Kugel angespielt
+454 Keine Kugel versenkt und keine Bande berührt
+455 Kugel im Kopffeld angespielt
+456 Weiße versenkt
+
+// Spielernamen und Foulanzeige
+500 Spieler 1
+501 Spieler 2
+510 -
+511 -
+
+// Tastaturbelegung
+600 Linke Maustaste + Mausbewegung
+601 Blickrichtungs-Änderung
+602 Rechte Maustaste + Mausbewegung
+603 Positions-Änderung
+604 Mittlere Maustaste
+605 Nächster Modus
+
+606 Leertaste
+607 Nächster Modus
+608 Rücksetzen
+609 Voriger Modus
+610 F1..F8
+611 Vordefinierte Kameraposition laden
+612 1..8
+613 Kameraposition speichern
+
+614 Pfeiltasten
+615 Positions-Änderung / Weiße setzen
+616 Einfügen/Entfernen
+617 Höhe verändern
+618 Bild Auf/Bild Ab
+619 Bewegung in die/aus der Szene
+620 r
+621 Wiederholung des letzten Stoßes
+
+
+
+// Tutorial
+640 Herzlich Willkommen bei BillardGL. 
+641 Um Ihnen die wichtigsten Elemente von BillardGL zu zeigen, wollen wir Sie durch ein Tutorial führen. Sie können das Tutorial jederzeit mit der Escape-Taste oder einem Klick auf das Logo rechts unten abbrechen.
+642 Sie befinden sich derzeit im Betrachten-Modus. Dieser Zustand dient vor allem dazu, sich einen Überblick über die Situation auf dem Tisch zu verschaffen.
+643 Sie sollten zuerst versuchen, sich zu bewegen; benutzen Sie dazu die Pfeiltasten auf Ihrer Tastatur. Sie können auch Ihre Blickrichtung verändern: Halten Sie die linke Maustaste gedrückt und bewegen Sie gleichzeitig Ihre Maus.
+644 Um in den nächsten Zustand, das Zielen, zu kommen, drücken Sie die Leertaste.
+
+650 Jetzt befinden Sie sich im Zielen-Modus. Wenn Sie hier die Pfeiltasten drücken oder mit der Maus die Blickrichtung ändern, werden Sie merken, daß Sie sich nur noch um die weiße Kugel bewegen. 
+651 Beim Stoß wird die weiße Kugel sich genau von Ihnen weg bewegen. Wenn Sie also eine Kugel direkt über der weißen Kugel sehen, wird die Weiße diese beim Stoß treffen.
+652 Versuchen Sie nun, die vorderste Kugel des aufgebauten Dreiecks genau über der weißen Kugel zu positionieren.
+653 Um in den nächsten, den Ausholen-Zustand, zu kommen, HALTEN Sie die Leertaste GEDRÜCKT - die Dauer, für die Sie die Leertaste gedrückt halten, wird die Stärke des Stosses bestimmen.
+
+660 Jetzt holen Sie aus. In diesem Zustand können Sie die Richtung, in die Sie stossen wollen, noch mit der Maus oder der Tastatur korrigieren.
+661 Warten Sie, bis sich die Anzeige rechts zu etwa 3/4 gefüllt hat und lassen Sie dann die Leertaste los.
+
+670 Nun wird der Stoss ausgeführt. Eingreifen können Sie in das Geschehen zwar nicht mehr, aber Sie können sich wie im Betrachten-Modus die Situation nach Belieben betrachten.
+
+671 Versuchen Sie auch mal, auf die kleinen Kugeln am unteren Bildschirmrand zu klicken. Die entsprechende Kugel wird dann zentriert - eine praktische Sache, wenn man eine Kugel sucht.
+
+//682 Versuchen Sie doch jetzt einmal, die weiße Kugel in eines der sechs Löcher zu spielen.
+
+680 Hoppla - da haben Sie wohl die Weiße versenkt. 
+681 Sie dürfen sie nun nach Belieben im Kopffeld positionieren - benutzen Sie dazu die Pfeiltasten. Wenn Sie sich eine Position ausgesucht haben, können Sie die Leertaste benutzen, um in den Betrachten-Modus zu wechseln. 
+682 Probieren Sie dort die Backspace-Taste aus, mit der Sie aus beinahe jedem Modus in den vorhergehenden zurückkommen. 
+683 Viel Spaß beim Spielen mit BillardGL!
+
+690 Bravo! Sie haben gerade ihren allerersten Stoß geschafft!
+691 Es gibt noch weitere Möglichkeiten, sich in BillardGL zu bewegen. Probieren Sie einfach mal die Tasten "Einfügen", "Entfernen", Bild Auf" und "Bild Ab" sowie die Funktionstasten F1-F8 aus. Sie können auch die rechte Maustaste halten und dabei die Maus bewegen. Sie werden schnell verstehen, wie all diese Tasten funkionieren.
+692 Was passiert eigentlich, wenn sie die weiße Kugel direkt in eines der sechs Löcher zu spielen?
+693 Sie können das Tutorial mit "Escape" oder einem Klick auf das Logo rechts unten beenden. Wenn Sie das Tutorial später noch einmal ansehen wollen, so finden Sie es unter Hilfe/Tutorial im Menu.
+694 Viel Spaß beim Spielen mit BillardGL!
+
+
+
+// Regeln
+700 Regeln
+
+710 Begriffe
+
+711 Weiße
+712 Die Kugel weißer Farbe, mit der alle anderen angespielt werden
+
+713 Farbige Kugeln
+714 Kugeln, die im Verlauf des Spiels nach den Regeln versenkt werden sollen
+
+715 Bande
+716 der Rand der Spielfläche, an dem die Kugeln reflektiert werden
+
+717 Tasche
+718 nimmt die in dem zugehörigen Loch versenkten Kugeln auf
+
+719 Fußpunkt
+720 Punkt, auf dem die erste farbige Kugel beim Aufbau liegt
+
+721 Kopffeld
+722 Feld hinter der weißen Linie, in das die Weiße zu Spielbeginn eingesetzt wird
+
+723 Foul
+724 Spielzug, der in irgendeiner Art und Weise gegen die Regeln verstößt
+
+725 Spieler am Tisch
+726 Spieler, der an der Reihe ist
+
+727 Aufnahme
+728 bezeichnet eine Spielrunde von dem Zeitpunkt, an dem ein Spieler zum ersten Mal stößt bis zum nächsten Spielerwechsel
+
+
+740 Allgemeine Regeln
+
+741 Aufnahme
+742 Ein Spieler ist immer so lange am Tisch, bis er bei einem Stoß keine Kugel korrekt versenkt oder ein Foul begeht.
+
+743 Fouls 
+744 Es ist ein Foul, wenn 1. die Weiße keine korrekte farbige Kugel als erstes berührt, 2. die Weiße auf eine korrekte farbige Kugel gespielt wird, aber weder eine farbige Kugel versenkt wird, noch die Weiße oder eine Farbige gegen eine Bande läuft oder 3. die Weiße versenkt wird. Ein Spieler kann pro Aufnahme nur ein Foul begehen. Begeht ein Spieler ein Foul, so endet seine Aufnahme und der folgende Spieler hat Lageverbesserung auf dem gesamten Spielfeld. 
+
+745 Lageverbesserung 
+746 Hat ein Spieler Lageverbesserung am Tisch, darf er die Weiße beliebig plazieren. Hat der aufnahmeberechtigte Spieler Lageverbesserung im Kopffeld, darf er die Weiße dort frei plazieren. Er darf dann nur auf eine Kugel spielen, die auf der Kopflinie oder darüber hinaus im Spielfeld liegt, außer er spielt die Weiße zuerst an eine Bande außerhalb des Kopffeldes. Ein Verstoß gegen diese Regel ist ein Foul.
+
+747 8-Ball-Regeln 
+748 Ziel des Spiels 
+749 8-Ball wird mit 15 durchnumerierten farbigen Kugeln und der Weißen gespielt. Ein Spieler spielt die Kugeln der Gruppe von 1 bis 7 ("Volle"), während der Gegner die Kugeln von 9 bis 15 ("Halbe") spielt. Der Spieler, der als erster die Kugeln seiner Gruppe und dann die "8" versenkt, gewinnt das Spiel. 
+
+750 Eröffnungsstoß 
+751 Beim Eröffnungsstoß muß der Spieler am Tisch mit Lageverbesserung im Kopffeld eine farbige Kugel versenken oder mindestens vier farbige Kugeln eine Bande anlaufen lassen. Gelingt ihm dies nicht, so begeht er ein Foul und der dann aufnahmeberechtigte Spieler kann die Position so übernehmen und weiterspielen oder die Kugeln neu aufbauen lassen und selbst einen neuen Eröffnungsstoß durchführen. 
+
+752 Wenn beim Eröffnungsstoß die Weiße fällt, ist das ein Foul und der dann aufnahme-  berechtigte Spieler hat Lageverbesserung im Kopffeld, nicht auf dem ganzen Tisch.
+753 Wenn die "8" beim Eröffnungsstoß versenkt wird, so kann der eröffnende Spieler verlangen, daß neu aufgebaut wird oder daß die "8" wieder eingesetzt wird und er selbst so weiterspielt.
+
+754 Fällt beim Eröffnungsstoß die Weiße und die "8", so kann der Gegner neu aufbauen oder die "8" wieder einsetzen lassen und aus dem Kopffeld weiterspielen. Die "8" wird dabei am Fußpunkt wieder eingesetzt. Ist dies wegen der Lage anderer Kugeln nicht möglich, so wird sie auf der Linie zwischen Fußpunkt und Fußbande möglichst nahe am Fußpunkt wieder eingesetzt. 
+
+755 Offener Tisch 
+756 Der Tisch ist offen, wenn die Farbgruppen noch nicht zugeordet sind. 
+
+757 Korrekte Kugeln
+758 Ist der Tisch offen, so sind alle Farbigen korrekte Kugeln. Wurde schon die Zuordnung der Gruppen entschieden, so sind nur die Kugeln der eigenen Gruppe korrekte Kugeln, außer diese sind schon vollständig versenkt, dann ist einzig die "8" korrekt. 
+
+759 Wahl der Gruppe 
+760 Die Gruppe wird durch die erste nach dem Eröffnungsstoß korrekt versenkte Kugel bestimmt, außer die "8" wurde als erste berührt. 
+
+761 Verlust des Spiels 
+762 Ein Spieler verliert das Spiel, wenn er eine der folgenden Handlungen begeht: 1. Er spielt ein Foul, während er die "8" versenkt, 2. er versenkt die "8" mit demselben Stoß, mit dem er die letzte Farbige seiner Gruppe versenkt oder 3. er versenkt die "8", bevor er  berechtigt ist, darauf zu spielen.
+
+770 9-Ball-Regeln 
+771 Ziel des Spiels
+772 9-Ball wird mit den neun numerierten farbigen Kugeln 1 bis 9 und der Weißen gespielt. Bei jedem Stoß muß als erste Kugel diejenige mit der niedrigsten Zahl angespielt werden, aber die Kugeln müssen nicht in der Reihenfolge versenkt werden. Ein Spieler bleibt am Tisch, solange er eine Kugel korrekt versenkt und dabei kein Foul begeht oder die "9" korrekt versenkt und das Spiel damit gewinnt. 
+
+773 Eröffnungsstoß 
+774 Beim Eröffnungsstoß muß der Spieler am Tisch mit Lageverbesserung im Kopffeld eine farbige Kugel versenken oder mindestens vier farbige Kugeln eine Bande anlaufen lassen. Gelingt ihm dies nicht, so begeht er ein Foul und der dann aufnahmeberechtigte Spieler kann die Position so übernehmen und weiterspielen, oder die Kugeln neu aufbauen lassen und selbst einen neuen Eröffnungsstoß durchführen.
+775 Wenn beim Eröffnungsstoß die Weiße fällt, ist das ein Foul und der dann aufnahme- berechtigte Spieler hat Lageverbesserung auf dem ganzen Tisch. 
+
+776 "9" versenkt beim Foul 
+777 Wenn die "9" versenkt wird und der Spieler gleichzeitig ein Foul begeht, so wird die "9" am Fußpunkt wieder eingesetzt. Ist dies wegen der Lage anderer Kugeln nicht möglich, so wird sie auf der Linie zwischen Fußpunkt und Fußbande möglichst nahe am Fußpunkt wieder eingesetzt. 
+
+778 Korrekte Kugeln 
+779 Nur die jeweils niedrigste Kugel ist eine korrekt anspielbare Kugel, jede Kugel ist eine korrekt versenkbare Kugel. 
+
+780 Drei aufeinanderfolgende Fouls 
+781 Wenn ein Spieler drei Fouls in aufeinanderfolgenden Aufnahmen begeht, ohne dazwischen einen korrekten Stoß zu spielen, so verliert er das Spiel. 
+
+782 Ende des Spiels 
+783 Das Spiel endet, sobald die "9" mit einem korrekten Stoß versenkt wird.
+
+790 Special
+791 Edition
+
+
+//Sprachen
+990 €   
+991 Ihnen fehlt eine Sprache? Fügen Sie sie hinzu!
+992 Anleitung auf http://www.BillardGL.de/

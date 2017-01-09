@@ -1,0 +1,13 @@
+void KommandoZeilenParameter(int,char**);
+void SchreibeKonfiguration();
+void LeseKonfiguration();
+extern GLint Texturgroesse,AnzeigeTexturgroesse;
+extern GLint TischTexturgroesse,KugelAufloesung,InvertX,InvertY,Spiel,Schatten,PhysikFrequenz,ZBufferLoeschen,Farbtiefe,Reflektionen,Sprache,FullScreen;
+extern GLfloat Epsilon,MouseSpeed,ReibungsFaktor,BandenFaktor,KollisionsFaktor;
+extern char Spieler1[10];
+extern char Spieler2[10];
+extern char NetzwerkSpieler[10];
+extern GLint BildschirmAufloesung;
+extern GLint ZeigeFPS,AmbientesLicht,TischLampen,GrueneLampe;
+extern GLfloat EffektLautstaerke,MusikLautstaerke;
+extern GLint TexMMM;

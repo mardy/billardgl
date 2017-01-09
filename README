@@ -1,0 +1,436 @@
+BillardGL README 1.70
+
+---------------------------------------------------------------------
+"Anderungen 1.62->1.70
+
+ * Schiedsrichter gibt Begruendungen
+
+ * Fullscreen, wenn von glut unterstuetzt
+
+ * Weiter Steuerungsmoeglichkeit bei gedrueckter rechter Maustaste
+
+---------------------------------------------------------------------
+"Anderungen 1.61->1.62
+
+ * Tutorial, alle Regeln und Tastenbelegung innerhalb des Spiels
+   verf"ugbar, beides mit komplett neu geschriebenen Texten in 
+   Deutsch und Englisch.
+
+ * Nahezu jedes Menu wurde erweitert, besondes das Grafik-Menu
+   hat nun viel mehr Optionen.
+
+ * Fast alle Texturen abgeschafft, alle Texte und Beschriftungen 
+   werden jetzt aus einzelnen Buchstaben zusammengesetzt.
+
+ * Alle Texte werden aus einem Textfile geladen, so da"s jetzt
+   problemlos auch mehrere Sprachen m"oglich sind.
+
+---------------------------------------------------------------------
+"Anderungen 1.60->1.61
+
+ * Kugeltexturgr"o"se nun auch von der Entfernung abh"angig
+
+ * Startet im Fullscreen-Modus
+
+ * Texturierung optimiert und fehlerbereinigt
+   (nicht optisch, aber logisch)
+
+ * Komplett Vorbereitet f"ur Planeten-BillardGL
+
+---------------------------------------------------------------------
+"Anderungen 1.50->1.60
+
+ * Neue Kugelgeometrie mit verschiedenen Detailstufen abhaengig
+   von der Entfernung der Kamera
+
+ * Namen der beiden Spieler koennen eingegeben werden und werden
+   waehrend des Spiels angezeigt.
+
+ * Neuere glut-dll (v3.7.6) f"ur Windows
+
+ * Bugfixes... jede Menge Bugfixes.
+   Dank an Alle, die mir beim Aufsp"uren geholfen haben!
+
+
+"Anderungen 1.22->1.50
+
+ * Zwei-Spieler-Modus mit Schiedsrichter
+
+ * Neuere Physik 
+ 
+ * Neuer Tisch mit Linien und Diamanten
+
+ * Alle Einstellungen werden in einem File gespeichert.
+   Windows: ...\Programme\BillardGL ...\BillardGL.conf
+   Linux  : ~/.BillardGL.conf
+
+ * Statt der versenkten werden jetzt die noch im Spiel befindlichen
+   Kugeln angezeigt - ein Klick auf eine der Kugeln in der Anzeige
+   zentriert ihr "Aquivalent auf dem Tisch.
+
+ * Buchstaben-Texturen 
+
+ * Bug bei Wei"se versetzen behoben
+
+ * Der Sto"sabbruch wurde deaktiviert
+
+---------------------------------------------------------------------
+"Anderungen 1.21->1.22
+
+ * Dank neuerer glut.dll jetzt auch fl"ussig unter Windows 98 etc.
+   spielbar (17.8 Frames/sec -> 85.7 Frames/sec)
+
+ * Mausgeschwindigkeit einstellbar, das Menu ist komplett (f"ur die 
+   bisher existierenden Modi) 
+
+ * Beim Zielen ist die Rotationsgeschwindigkeit jetzt abh"angig vom
+   Abstand der Kamera zur Wei"sen
+
+ * Hoch/Runter ist wieder existent, liegt aber jetzt auf Einf"ugen
+   und Entfernen
+
+ * Intelligenteres Management der Texturen spart RAM und Ladezeit,
+   desweiteren wurden viele Texturen 'abgespeckt'
+
+ * Diverse Bugfixes beim Positionieren der Wei"sen, beim Zoomen...
+
+
+"Anderungen 1.20->1.21
+
+ * Aufgrund der Vielzahl von Texturen, die im Menu verwendet werden,
+   (Die Texturen sind inzwischen "uber 26 MB gro"s!) wird jedes 
+   zuk"unftige Release in sieben statt in drei Versionen ins Netz 
+   gestellt: 
+   1. BGL-?-oT.zip nur die Sourcen ohne Texturen, 
+   2. BGL-?-aT.zip wie fr"uher alleTexturen.zip mit allen Texturen, 
+   3. BGL-?-de.zip mit nur den deutschen Texturen, die man bei 
+      realistischen Einstellungen braucht (Texturen/1 ist fast leer)
+      Die englischen Texturen fehlen komplett.
+   4. BGL-?-en.zip wie BGL-?-de.zip, nur mit englischen Texturen
+   5. BGL-?-aT.exe Setup-Programm f"ur Windows mit allen
+      Texturen (entspricht BGL-?-aT.zip)
+   6. BGL-?-de.exe Setup-Programm f"ur Windows mit abgespeckten, nur 
+      deutschen Texturen (entspricht BGL-?-de.zip)
+   7. BGL-?-en.exe Setup-Programm f"ur Windows mit abgespeckten, nur 
+      englischen Texturen (entspricht BGL-?-en.zip)
+
+ * es gibt auch ein 'make install'. BillardGL bzw. billardGL werden
+   in /usr/X11R6/bin, Texturen in /usr/lib/BillardGL und README in
+   /usr/share/doc/packages/BillardGL installiert.
+   Um ein 'make install' machen zu k"onnen, mu"s man allerdings in
+   Namen.h die Zeile //#define PFAD "/usr/lib/BillardGL/" wieder
+   einkommentieren.
+   WICHTIG: Die Texturen werden dann in /usr/lib/BillardGL/Texturen
+   gesucht - wenn dort nichts liegt, l"auft das Programm nicht. 
+
+ * Die meisten Tastenbelegungen sind jetzt durch einen 'Cheat-Code'
+   'gesch"utzt', da w"ahrend eines 'richtigen' Spiels solche Dinge
+   ja eh nicht erw"unscht sind... der Code lautet "ubrigens 'xnor' ;)
+
+ * Deutsche und englische Menustruktur, schon vorbereitet f"ur die 
+   noch fehlenden Modi Zweispieler und Netzwerk. Die Menuroutinen 
+   ersetzen auch komplett die Anzeige-Klasse, da sie wesentlich 
+   flexibler sind.
+
+ * Die Wei"se ist jetzt nach Versenken nur noch dort aufsetzbar,
+   wo es laut Regel erlaubt ist, und wo kein anderer Ball liegt.
+   Das Spiel beginnt nun (nach Regel!) mit dem freien 
+   Positionieren der Wei"sen im Kopffeld.
+
+
+"Anderungen 1.11->1.20
+
+ * Kamera "gleitet" jetzt immer, das erschwert zwar das Handling,
+   erh"oht aber meines Erachtens den Realismus. Damit erledigen sich 
+   auch viele Probleme der Kamerabewegung (insbesondere Spr"unge).
+
+ * L"ast sich jetzt (nach einigem Umstell-Aufwand) auch problemlos mit
+   Visual Studio unter Win32 compilieren und ausf"uhren.
+
+ * ACHTUNG: Viele #includes und .h-Files haben sich ver"andert, einige
+   Dateien sind sogar vollkommen verschwunden. ARBEITET BITTE NUR MIT 
+   DER NEUEN VERSION!
+
+"Anderungen 1.10->1.11
+
+ * QT ist tot, es lebe GLUT.
+
+ * In Ermangelung einer Doppelklick-Erkenn-Events bei GLUT ist der
+   Zustand-Umschalter auf die mittlere Maustaste oder alternativ
+   auf die Leertaste gewandert.
+
+"Anderungen 1.00->1.10
+
+ * Physik-Version von der Pr"asentation
+
+ * Die versenkten B"alle werden angezeigt
+
+ * "e" (Standardsto"s) und "d" (Standardsto"spreview)
+   machen das Leben ein wenig einfacher
+
+"Anderungen 0.28->1.00
+
+ * Bugfixes
+
+ * Versenken geht
+
+ * High-Quality-Kurzkommandozeilenoption
+
+"Anderungen 0.27->0.28
+
+ * Schatten (fertig ;)
+
+ * Wenn die Weisse versenkt wird, kann man sie neu setzen (Pfeiltasten)
+
+ * Stossstaerkenanzeige beim "Ausholen"
+
+ * z-Buffer-Optimierung
+
+ * -z schaltet die Z- und Color-Buffer-Clears ab, man kann sie dann 
+   mit "c" und "r" manuell loeschen.
+
+ * -s/-schatten schaltet die Schatten AUS
+
+ * Soundtest in der Konfigurationsanzeige - leider meint mein QT, 
+   keinen Sound abspielen zu k"onnen. Wie steht's hier mit den O2s?
+
+ * 3-dimensionale Positionstabelle
+
+ * z-Buffer-Optimierung
+
+ * simple Abfrage auf Versenken
+
+ * Vollbild-Modus (Fenster: "f")
+
+
+"Anderungen 0.26->0.27
+ * Verkleinerung der Balltexturen auf die H"alfte der Gr"o"se ohne
+   Qualit"atsverlust, daf"ur aber mit Geschwindigkeitsgewinn
+
+ * "r" spielt den letzten Stoss nochmal ab
+
+ * Texturinterpolation abschaltbar
+
+ * Kamerafahrten zwischen den gespeicherten Positionen und vom
+   Betrachten- in den Zielen-Modus - geht jetzt auch bei
+   niederen Frameraten - sorry ;)
+
+ * Andere Steuerung im Zielen- und Ausholen-Modus
+
+ * Tisch hat Lochverkleidungen (innen+aussen) und Holzbanden, 
+   L"ocher sind an den richtigen Stellen.
+   Der Tisch an sich d"urfte damit bis auf Lichter, Lampe und
+   Textur auf der Oberfl"ache (Linien!) erledigt sein.
+
+ * Tischtextur (Holz) per Kommandozeilenoption konfigurierbar
+
+
+"Anderungen 0.25->0.26
+ * Abbruch der Stossanimation springt jetzt direkt auf den Endzustand,
+   allerdings nur bei Doppelklick mit der linken Maustaste. Bei
+   Einfachklick mit der rechten bleibt die Wei"se stehen (positionieren!)
+ 
+ * Stoss beliebig steuerbar, die Wei"se bewegt sich stets genau von
+   der Kamera weg (die Entfernung der Kamera zur Wei"sen ist dabei 
+   egal). Die L"ange des Maustastendrucks reguliert die 
+   Geschwindigkeit.
+
+ * Primitive Anzeige mit Zustandsanzeige und >>> LOGO <<< ;))
+
+ * Physik-Simulation von Stefan (ohne Normierung)
+
+ * Tinas wiederentdeckter Tisch
+
+ * Neue Kommandozeilenoptionen f"ur die Physikfrequenz, den Reibungs-,
+   Banden- und Kollisionsfaktor. 
+
+ * Neue Kommandozeilenoption f"ur die Texturen der Anzeige
+
+ * Achtung: Aus -kugel/-k ist -geometrie/-g geworden.
+   Ebenso: -spiel/-g -> -aufstellung/-a
+
+ * Derzeitige Projektgr"o"se: 3165 Zeilen (mit LA.* und bmp.*:4154)
+
+"Anderungen 0.24->0.25
+ * Ausf"uhrlichere Dokumentierung der meisten Files
+
+ * Hintergrundfarbe zwischen Schwarz und Weiss umschaltbar ("h") -
+   hilft bei dunklen Stellen im Wireframe
+
+ * Zwei neue Bewegungsmodi: 
+   - Rein/Raus (Bild auf/ab) 
+   - Zoom Rein/Raus (Pos1/Ende)
+
+
+"Anderungen 0.21->0.24
+ * Anzeige umschaltbar zwischen Punkte/Linien/Fl"achen
+
+ * Erste Tischversion von Tina
+
+ * README
+
+
+"Anderungen 0.19->0.21
+ * Mouselook ist verf"ugbar, kann mit Mousespeed (-m) reguliert werden
+
+ * mit 1-8 lassen sich Kamerapositionen speichern und mit F1-F8 wieder 
+   aufrufen.
+
+
+"Anderungen 0.18->0.19
+ * diverse Szenarien, die mit Tasten und Kommandozeilenoptionen aufgerufen 
+   werden k"onnen
+
+ * Einführung von Epsilon mit Epsilon Minimal- und 3*Epsilon Maximalabstand 
+   der B"alle bei der Startaufstellung
+
+
+"Anderungen 0.15->0.18
+ * Kommandozeilen funzen f"ur Texturen, Ballgeometrie und
+   Y-Achsen-Vertauschung
+
+   -t bzw. -texturen mit 1,2,4,8,0 setzt die Texturgr"o"se
+      1=gr"o"ste, 8=kleinste, 0=keine
+      BillardGL -t 0   schaltet Texturen aus
+      Default: 4
+
+   -k bzw. -kugel setzt die Ballgeometrie
+      BillardGL -k 2 20   generiert B"alle mit Latitudes=2 
+      und Latitudes=20 (Kreisel ;)
+
+   -y bzw. -inverty invertiert die y-Achse bei der Drehung
+
+ * Rubrik sinnvoll: Nach Ablauf der Sto"s-Animation wird die 
+   Framerate angezeigt ;))
+
+
+"Anderungen 0.01->0.15
+
+  * Ich habe die while-Schleife durch einen Timer ersetzt, dadurch ist die
+    CPU-Usage von "uber 90% auf unter 2% gefallen (daheim ;)
+
+  * Dadurch kann QT jetzt auch nebenher (w"ahrend der Animation) was
+    machen, etwa die Kamera steuern:
+    Pfeiltasten:        Vor/Zur"uck/Seitw"arts
+    8,4,5,6(Numblock) : Drehen.
+    Shift/Ctrl:         Hoch/Runter
+    Das nach oben/unten-Drehen ist noch Verkehrtherum f"ur euch beide, ich
+    werd's aber umschaltbar machen.
+
+  * Der "Stoss" wird durch einen Linksklick mit der Maus ausgel"ost.
+
+  * Die B"alle drehen sich jetzt und sind auch mit Texturen bepflastert.
+    Das funktioniert auf den SGIs leider nur recht m"a"sig, also werde ich
+    auch die Texturen abschaltbar machen.
+
+  * Ein sehr einfacher Tisch (Rechteck ;) existiert auch schon.
+
+  * "make clear" funktioniert jetzt wie "make clean" (und ich mu"s mich 
+    nicht mehr "argern) 
+
+---------------------------------------------------------------------
+Kommandozeilenoptionen:
+
+ -hq              High-Quality-Modus: Kurz f"ur:
+                  -t 2
+                  -at 1
+                  -tt 1
+                  -g 20 30
+
+ -texturen (-t)   Ball-Texturgr"o"se
+                  1: Ganz    (256x256 - 2880 KB)
+                  2: Halb    (128x128 -  720 KB)
+                  4: Viertel ( 64x64  -  190 KB) (default)
+                  8: Achtel  ( 32x32  -   45 KB)
+
+ -atexturen (-at) Anzeige-Texturgr"o"se
+                  1: Ganz
+                  2: Halb (default)
+                  4: Viertel
+                  8: Achtel
+
+ -ttexturen (-tt) Tisch-Texturgr"o"se
+                  1: Ganz
+                  2: Halb (default)
+                  4: Viertel
+                  8: Achtel
+                  0: Keine Tischtextur
+
+ -nearest (-n)    Texturinterpolation abschalten
+
+ -zbuffer (-z)    Z- und Color-Buffer-Clear abschalten
+
+ -geometrie (-g)  Ballgeometrie
+                  a: #L"angengrade
+                  b: #Breitengrade
+                  (default: 15x25)
+
+ -invertx (-x)    Invertiert die Drehung in x-Richtung
+
+ -inverty (-y)    Invertiert die Drehung in y-Richtung
+
+ -schatten (-s)   Schatten Aus
+
+ -mousespeed (-m) Mausgeschwindigkeit (default: 0.4)
+
+ -epsilon (-e)    Setzt den minimalen Abstand (in cm) der B"alle zueinander 
+                  bei der Startaufstellung (default: 0.1)
+
+ -aufstellung(-a) Anfangs gesetzte Spielaufstellung:
+                  2: Zwei B"alle
+                  8: 8-Ball (default)
+                  9: 9-Ball
+                  z: Zuf"allige Verteilung
+
+ -physik (-p)     Physik-Frequenz (default: 400)
+
+ -reibung (-r)    Reibungsfaktor (default: 1.2)
+ 
+ -bande (-b)      Bandenfaktor (default: 0.4)
+
+ -kollision (-k)  Kollisionsfaktor (default: 0.95)
+
+
+---------------------------------------------------------------------
+Tastaturbelegung:
+
+ Pfeiltasten:     Bewegen der Kamera in Pfeilrichtung
+
+ Shift/Strg:      Bewegen der Kamera nach oben/unten           
+ 
+ Mausbewegung mit
+    linker Taste: Drehen der Kamera in Bewegungsrichtung 
+                  (kann mit -x/-y invertiert werden)
+
+ Bild auf/ab:     Hinein/Hinausbewegung in die Szene
+
+ Pos1/Ende:       Zoom Rein/Raus 
+
+ 1..6:            Abspeichern einer Kameraposition  
+
+ F1..F6:          Wiederaufrufen einer Kameraposition, F1 bis F4 sind vorbelegt.
+
+ r:               "Replay" des letzten Stosses
+
+ Nur noch mit Cheat erreichbar:
+
+ s,a,n,z,l:       2-B"alle-, 8-Ball-, 9-Ball-, Zufalls-, leere Aufstellung
+ 
+ 8,9:             8-Ball-, 9-Ball-Aufstellung
+
+ w:               Wechselt zwischen Fl"achen-, Punkt- und 
+                  Liniendarstellung
+
+ h:               Wechselt die Hintergrundfarbe zwischen Schwarz und Weiss
+
+ Backspace:       Schaltet die State-Maschin' in den BETRACHTEN-Modus
+
+ c:               L"oscht den Z- und den Color-Buffer
+
+ f:               Schaltet zwischen Vollbild- und Fenster-Modus um
+
+ e:               Schnellschuss
+
+ d:               Zeigt die Folgen des Schnellschusses 
+
+

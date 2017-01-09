@@ -1,0 +1,734 @@
+// Titel
+
+0 BillardGL 1.7
+
+1 © 2001, 2002 Tobias Nopper • Stefan Disch • Martina Welte
+
+2 Albert-Ludwigs-University Freiburg, Germany, Institute of Computer Science
+
+3 http://www.BillardGL.de/
+
+4 BillardGL se distribuye absolutamente sin ninguna garantía
+
+
+
+//Menú Principal
+
+10 Menú principal                        
+
+11 Entrenamiento
+
+12 Dos jugadores
+
+13 Juego en red
+
+14 Configuración
+
+15 Humano vs Ordenador
+
+16 Salir
+
+17 Ayuda
+
+
+
+// Setup
+
+20 Controles
+
+21 Video
+
+22 Audio
+
+23 Idioma
+
+
+
+//Help
+
+50 Introducción
+
+51 Reglas del Billar
+
+52 Página Siguiente
+
+53 Página Anterior
+
+54 Atrás
+
+55 Tutorial
+
+56 Teclas
+
+
+
+//General
+
+100 Atrás
+
+101 Aplicar
+
+102 Aceptar
+
+103 Cancelar
+
+
+
+//Training
+
+110 8-Ball
+
+111 9-Ball
+
+
+
+// Two Players
+
+120 Jugador 1 :
+
+121 Jugador 2 :
+
+
+
+//Quit
+
+160 Si, Salir
+
+
+
+//Network Game
+
+130 Nuevo Juego en Red
+
+131 Unirse a un Juego
+
+132 Espere...
+
+133 Direccion IP
+
+134 Conectar
+
+
+
+//Out off the game
+
+170 Continuar
+
+171 Abandonar Partida
+
+
+
+//During the game
+
+180 Coloca la bola blanca
+
+181 Vista
+
+182 Apuntar
+
+183 Tirar
+
+184 Tirar
+
+185 es el ganador
+
+186 es tu turno
+
+187 Coloca la bola blanca 
+
+188 detras de la linea de separación
+
+189 ¿Qué deseas?:
+
+190 Reengancharte
+
+191 Parar la partida
+
+192 Nueva Partida
+
+193 Falta
+
+194 Falta
+
+195 Falta
+
+196 Falta
+
+197 Falta
+
+198 Nueva partida 8-Ball
+
+199 Nueva partida 9-Ball
+
+
+
+// Setup - Controls
+
+200 Velocidad del ratón :
+
+201 Lento
+
+202 Normal
+
+203 Rápido
+
+204 Muy rápido
+
+205 Invertir Eje-X : 
+
+206 Si
+
+207 No
+
+208 Invertir Eje-Y :
+
+209 Si
+
+210 No
+
+
+
+// Setup - Video
+
+220 Detalle de la bola :
+
+221 Muy baja
+
+222 Baja
+
+223 Normal
+
+224 Alta
+
+
+
+230 Textura de la bola :
+
+231 Muy baja
+
+232 Baja
+
+233 Normal
+
+234 Alta
+
+
+
+240 Textura de la mesa :
+
+241 Muy baja
+
+242 Baja
+
+243 Normal
+
+244 Alta
+
+245 No
+
+
+
+250 Texturas del menu :
+
+251 Baja
+
+252 Normal
+
+253 Alta
+
+
+
+260 Reflejos :
+
+261 No
+
+262 Si
+
+
+
+270 Resolucion de Pantalla :
+
+271 640x480
+
+272 800x600
+
+273 1024x768
+
+274 1280x1024
+
+275 1600x1200
+
+
+
+280 Profundidad de Color :
+
+281 16 Bit
+
+282 24 Bit
+
+283 32 Bit
+
+
+
+290 Sombras :
+
+291 No
+
+292 Si
+
+
+
+295 Interpolacion de texturas :
+296 No
+297 Rápido
+298 Normal
+299 Alta
+
+300 Calidad :
+
+301 Muy rápido
+
+302 Rápido
+
+303 Normal
+
+304 Alta
+
+305 Muy alta
+
+306 Definida por el usuario
+
+
+
+310 Atención
+
+311 La nueva resolucion de pantalla sera
+
+312 aplicada cuando arranque de nuevo BillardGL
+
+
+
+320 Luces de ambiente :
+
+321 Si
+
+322 No
+
+
+
+325 Iluminacion de la mesa :
+
+326 1 Lampara
+
+327 2 Lamparas
+
+328 3 Lamparas
+
+
+
+330 Color Bleeding :
+
+331 Si
+
+332 No
+
+
+
+335 FPS :
+
+336 Si
+
+337 No
+
+
+
+// Setup - Audio
+
+350 Efectos de sonido
+
+351 Apagado
+
+352 10%
+
+353 20%
+
+354 30%
+
+355 40%
+
+356 50%
+
+357 60%
+
+358 70%
+
+359 80%
+
+360 90%
+
+361 100%
+
+
+
+370 Volumen de la musica
+
+371 Apagado
+
+372 10%
+
+373 20%
+
+374 30%
+
+375 40%
+
+376 50%
+
+377 60%
+
+378 70%
+
+379 80%
+
+380 90%
+
+381 100%
+
+
+
+// Setup - Language
+
+400 Language / Sprache / Lenguaje
+
+
+
+// Judge
+
+450 Tirada ilegal
+
+451 Has metido la bola blanca
+
+452 No has golpeado ninguna de tus bolas
+
+453 La primera bola golpeada no era de las tuyas
+
+454 No has introducido ninguna bola y no has tocado esquina alguna
+
+455 Ball in head field touched first
+
+456 Has metido la bola blanca
+
+
+
+// Names of Players and Fouls
+
+500 Jugador 1
+
+501 Jugador 2
+
+510 -
+
+511 -
+
+
+
+// Tastaturbelegung
+
+600 Botón izquierdo del ratón + movimiento ratón
+
+601 Cambiar la vista
+
+602 Botón derecho del ratón + movimiento ratón
+
+603 Cambiar posición
+
+604 Botón central del ratón
+
+605 Siguiente acción
+
+
+
+606 Espacio
+
+607 Siguiente acción
+
+608 Borrado atrás
+
+609 Anterior acción
+
+610 F1..F8
+
+611 Cargar una posición predefinida de cámara 
+
+612 1..8
+
+613 Grabar una posición de cámara
+
+
+
+614 Teclas de Cursor
+
+615 Colocar la bola blanca
+
+616 Insert/Supr
+
+617 Cambiar inclinación
+
+618 Re.Pag/Av.Pag
+
+619 Acercarse/alejarse de la mesa
+
+620 r
+
+621 Repetir última tirada
+
+
+
+
+
+
+
+//Tutorial
+
+640 Bienvenido a BillardGL. 
+
+641 Para ver las características mas significativas de BillardGL, nos gustaría guiarte através de un tutorial. Puedes salir del tutorial en cualquier momento pulsando la tecla Escape or o haciendo clic en el logo de la esquina inferior derecha de la pantalla.      
+
+642 Ahora te encuentras en el modo Vista. Este modo sirve para dar un vistazo general de la mesa de juego.     
+
+643 Antes de nada deberías probar a moverte por la mesa; hazlo con las teclas de cursor. También puedes cambiar el angulo de vision: Mueve tu ratón mientras presionas el botón izquierdo. 
+
+644 Para pasar al siguiente estado - Apuntar - presiona la barra espaciadora. 
+
+
+
+650 Ahora estas el modo de Apuntar. Cuando presiones la teclas de cursor o uses el ratón para cambiar el angulo de visión lo harás siempre con respecto a la bola blanca.   
+
+651 Cuando golpees la bola blanca, ésta se movera de forma precisa hacia donde estes mirando en ese momento. De modo que si estas mirando una bola en linea con la bola blanca, ésta será la bola a la cual golpees.
+
+652 Ahora tranta de situar el grupo de bolas justo a la altura de la bola blanca.
+
+653 Para pasar al siguiente estado - Modo de Tiro - presiona la barra espaciadora. Cuanto mas tiempo presiones la barra espaciadora, mas fuerte impactará la bola. 
+
+
+
+660 Ahora te encuentras en el modo de tiro. En este modo puedes reajustar la dirección a la que estas apuntando usando el teclado o el ratón.    
+
+661 Por favor, espera hasta que la barra de potencia situada a la derecha se encuentre a unos 3/4 - y seguidamente suelta la barra espaciadora. 
+
+
+
+670 Ya has tirado. No te es posible interferir en ningún momento, pero puedes ver lo que sucede en la mesa si estas en el modo de Vista.
+
+671 Además de esto, prueba a hacer clic en las pequeñas bolas situadas en la parte inferior de la pantalla. La bola correspondiente aparecerá centrada - algo muy útil cuando estas buscando una bola concreta.    
+
+
+
+680 Oh, oh... - parece que has metido la bola blanca.  
+
+681 Ahora debes colocarla en cualquier lugar que desees dentro del Campo principal. Usa las teclas de dirección para hacerlo. Cuando hallas escogido una posición puedes hacer uso de la barra espaciadora para cambiar la vista de nuevo. 
+
+682 Prueba la tecla de borrar - volverás a la etapa anterior desde cualquier situación.   
+
+683 Diviértete jugando a BillardGL!
+
+
+
+690 ¡ Bravo, has hecho tu primera tirada ! 
+
+691 Hay muchas formas para moverse en BillardGL. Observa el efecto de las teclas "Insert", "Supr", "Re Pág", "Av Pág" y las teclas de función F1 hasta F8. Prueba a presionar el botón derecho del ratón mientras lo mueves. Muy pronto aprenderás como funcionan todas las teclas.
+
+
+
+692 No obstante podrias intentar introducir la bola blanca en alguna de las seis troneras de la mesa.
+
+
+
+693 Puedes abandonar el tutorial presionando la tecla "Escape" o haciendo clic en el logo situado en la esquina inferior derecha. Si quieres regresar en otro momento al tutorial puedes encontrarlo en Ayuda/Tutorial en el Menú.
+
+
+
+694 Diviertete jugando a BillardGL!
+
+
+
+700 Reglas
+
+
+
+710 Glosario
+
+
+
+711 Bola blanca
+
+712 Es la bola usada para golpear las otras bolas.
+
+
+
+713 Resto bolas 
+
+714 Las bolas coloreadas y numeradas que han de ser introducidas en las troneras siguiendo unas reglas.
+
+
+
+715 Bandas
+
+716 Lados del área de juego donde las bolas impactan.
+
+
+
+717 Tronera
+
+718 Lugar donde se almacenan las bolas que caen por los agujeros. 
+
+
+
+719 Punto de tiro 
+
+720 El punto donde se coloca la primera bola al agruparlas.
+
+
+
+721 Campo principal
+
+722 El espacio situado detrás de la linea de separacion en el que se coloca la bola blanca al principio del juego.
+
+
+
+723 Falta
+
+724 Romper alguna regla durante el juego. 
+
+
+
+725 Jugador en la mesa 
+
+726 El jugador que actualmente tiene el turno.
+
+
+
+727 Turno
+
+728 El tiempo que transcurre desde el primer golpe hasta el cambio del actual jugador
+
+
+
+740 Reglas Generales
+
+
+
+741 Turno
+
+742 Un jugador está en la mesa hasta que comete un fallo.
+
+
+
+743 Faltas 
+
+744 El actual jugador comete una falta si 1. la bola blanca no golpea una bola correcta primero, 2. la bola blanca golpea una bola correcta pero ni la bola blanca ni la bola golpeada impactan contra un lateral ó 3. la bola blanca se introduce en la tronera. Un jugador puede cometer unicamente una falta por ronda. Si un jugador comete una falta, su ronda acaba y su oponente tiene la bola blanca en su poder.
+
+
+
+745 Bola blanca en mano
+
+746 Si un jugador tiene en sus manos la bola blanca debe situarla en algún lugar de la mesa. Si un jugador tiene la bola blanca por detras de la linea de separación, debe colocarla en el campo principal. Después, unicamente puede golpear las bolas situadas por detrás de la linea de separación, excepto cuando se apoya en alguna banda para golpear bolas situadas dentro del campo principal. Una violación de este regla es entendida como una falta.
+
+
+
+747 8-Ball Reglas
+
+748 Objetivo del juego
+
+749 Al 8-Ball se juega con 15 bolas numeradas y una bola blanca. Un jugador trata de introducir las bolas numeradas del 1 al 7 (lisas)y su oponente la numeradas del 9 al 15 (rayadas). El jugador que consiga introducir correctamente su grupo de bolas en primer lugar mas la bola número 8 (negra) gana el juego.
+
+
+
+750 Tirada para romper correcta
+
+751 Para hacerlo de forma correcta, el jugador (con la bola blanca por detras de la linea de separación) debe, bien introducir una bola o que cuatro de las bolas golpeen la banda. Si falla será una falta y el siguiente jugador tiene la opcion de continuar,volver a agrupar las bolas e intentar salir rompiendo o permitir al oponente romper de nuevo. 
+
+
+
+752 Es una falta introducir la bola blanca al romper. El oponente, en ese caso colocará la bola blanca tras la linea de separación.
+
+
+
+753 Si la bola negra se introduce al romper, el jugador puede solicitar agrupar las bolas o tener la bola negra ya ubicada y continuar jugando.
+
+
+
+754 Si la bola negra y la blanca se introducen al romper, el jugador puede solicitar agrupar las bolas o tener la bola negra ya ubicada y continuar jugando situando la bola blanca tras la linea de separación. La bola negra se situará en el punto de tiro. Si no es posible porque hay una bola en ese lugar, se situará tan cerca como se pueda de ese punto.
+
+
+
+755 Mesa abierta
+
+756 La mesa está abierta cuando el grupo de bolas a introducir (lisas o rayadas) no ha sido determinado todavía.
+
+
+
+757 Bola legal
+
+758 Todas la bolas son legales si la mesa está abierta. Si ya se ha escogido un grupo, entonces las bolas legasles son únicamente las de ese grupo. La bola negra es legal únicamente si todas las bolas de un grupo han sido introducidas.
+
+
+
+759 Elección de un grupo
+
+760 El grupo se elige despues de romper con la primera bola que se introduzca, solo si la bola negra no ha sido golpeada.
+
+
+
+761 Perder la partida
+
+762 Un jugador pierde si comete una de las siguientes actuaciones: 1. Comete una falta mientras introduce la bola negra, 2. introduce la bola negra en el mismo golpe que la última de su grupo o 3. introduce la bola negra antes de que se convierta en una bola legal.
+
+
+
+770 9-Ball Reglas
+
+771 Objetivo del juego
+
+772 Al 9-Ball se juega con nueve bolas numeradas de la 1 a la 9 y la bola blanca. En cada tiro, la primera bola en ser golpeada debe ser la mas baja que halla en la mesa. Las bolas no tienen que ser necesariamente introducinas en orden. Un jugador permanece en la mesa tanto tiempo como este introduciendo bolas, no cometa una falta o gane en juego al haber introducido las 9 bolas. 
+
+
+
+773 Tirada para romper correcta
+
+774 Para hacerlo de forma correcta, el jugador (con la bola blanca por detras de la linea de separación) debe, bien introducir una bola o que cuatro de las bolas golpeen la banda. Si falla será una falta y el siguiente jugador tiene la opcion de continuar,volver a agrupar las bolas e intentar salir rompiendo o permitir al oponente romper de nuevo. 
+
+775 Se comete una falta si la bola blanca se introduce al romper. Entonces el oponente tiene la bola blanca en su poder. 
+
+
+
+776 Bola 9 introducida mientras se comete una falta
+
+777 Si la novena bola es introducida mientras que el actual jugador comete una falta, se ubica de nuevo en su lugar de origen. Si esto no es posible, p.e. debido a que otra bola ocupa ese lugar, la bola 9 se colocará en la marca central. Si no es posible debido a la anterior situación, se colocará lo mas cerca posible de dicho lugar.
+
+
+
+778 Bola legal 
+
+779 La bola con numeración mas baja es la única bola legal
+
+
+
+780 Tres faltas consecutivas
+
+781 Si un jugador comete falta tres veces consecutivas pierde el juego
+
+
+
+782 Final de la partida
+
+783 El juego termina cuando se introducen de forma correcta las 9 bolas o cuando un jugador comete tres faltas consecutivas.
+
+
+
+990 €   
+
+991 ¿No está tu lengua materna? ¡Créala, es fácil!
+
+992 Mira las instrucciones en http://www.BillardGL.de
+

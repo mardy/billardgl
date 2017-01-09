@@ -1,0 +1,401 @@
+//English 901.lang by Tobias Nopper & Martina Welte
+
+// Titel
+0 BillardGL 1.7
+1 © 2001, 2002 Tobias Nopper • Stefan Disch • Martina Welte
+2 Albert-Ludwigs-University Freiburg, Germany, Institute of Computer Science
+3 http://www.BillardGL.de/
+4 BillardGL comes with absolutely no warranty
+
+//Main Menu
+10 Main Menu                        
+11 Training
+12 Two Players
+13 Network Game
+14 Setup
+15 Play against Computer
+16 Quit
+17 Help
+
+// Setup
+20 Controls
+21 Video
+22 Audio
+23 Language
+
+//Help
+50 Introduction
+51 Rules of Billard
+52 Next Page
+53 Previous Page
+54 Back
+55 Tutorial
+56 Key bindings
+
+//General
+100 Back
+101 Apply
+102 OK
+103 Cancel
+
+//Training
+110 8-Ball
+111 9-Ball
+
+// Two Players
+120 Player 1 :
+121 Player 2 :
+
+//Quit
+160 Yes, Quit
+
+//Network Game
+130 New Network Game
+131 Join Game
+132 Wait...
+133 IP-Adress
+134 Connect
+
+//Out off the game
+170 Resume
+171 Leave the Table
+
+//During the game
+180 Place White
+181 View
+182 Aim
+183 Swing
+184 Shot
+185 is the winner
+186 is at the table
+187 and has the cue ball in hand 
+188 behind the head string
+189 Do you want to :
+190 Re-Rack
+191 Spot the 8-Ball
+192 New Game
+193 Foul
+194 Foul
+195 Foul
+196 Fouls
+197 Fouls
+198 New 8-Ball-Arrangement
+199 New 9-Ball-Arrangement
+
+// Setup - Controls
+200 Mouse Speed :
+201 Slow
+202 Standard
+203 Fast
+204 Very Fast
+205 Invert X-Axis : 
+206 Yes
+207 No
+208 Invert Y-Axis :
+209 Yes
+210 No
+
+// Setup - Video
+220 Ball Geometry :
+221 Very Low
+222 Low
+223 Standard
+224 High
+
+230 Ball Textures :
+231 Very Low
+232 Low
+233 Standard
+234 High
+
+240 Table Textures :
+241 Very Low
+242 Low
+243 Standard
+244 High
+245 Off
+
+250 Menu Textures :
+251 Low
+252 Standard
+253 High
+
+260 Reflections :
+261 Off
+262 On
+
+270 Screen Resolutions :
+271 640x480
+272 800x600
+273 1024x768
+274 1280x1024
+275 1600x1200
+
+280 Color Depth :
+281 16 Bit
+282 24 Bit
+283 32 Bit
+
+290 Shadows :
+291 Off
+292 On
+
+295 Texture Interpolation :
+296 Off
+297 Fast
+298 Standard
+299 High
+
+300 Quality :
+301 Very Fast
+302 Fast
+303 Standard
+304 High
+305 Very High
+306 User Defined
+
+310 Hint
+311 The new screen resolution will be
+312 applied next time BillardGL is started
+
+320 Ambient Light :
+321 On
+322 Off
+
+325 Table Illumination :
+326 1 Lamp
+327 2 Lamps
+328 3 Lamps
+
+330 Color Bleeding :
+331 On
+332 Off
+
+335 FPS :
+336 On
+337 Off
+
+// Setup - Audio
+350 Effects Volume
+351 Off
+352 10%
+353 20%
+354 30%
+355 40%
+356 50%
+357 60%
+358 70%
+359 80%
+360 90%
+361 100%
+
+370 Music Volume
+371 Off
+372 10%
+373 20%
+374 30%
+375 40%
+376 50%
+377 60%
+378 70%
+379 80%
+380 90%
+381 100%
+
+// Setup - Language
+400 Language / Sprache
+
+// Judge
+450 No legal break shot
+451 Cue ball dropped at break shot
+452 No object ball touched
+453 No legal object ball touched first
+454 No ball dropped and no cushion touched
+455 Ball in head field touched first
+456 Cue ball dropped
+
+// Names of Players and Fouls
+500 Player 1
+501 Player 2
+510 -
+511 -
+
+// Tastaturbelegung
+600 Left mouse button + mouse movement
+601 Change view
+602 Right mouse button + mouse movement
+603 Change position
+604 Middle mouse button
+605 Next mode 
+
+606 Space
+607 Next Mode
+608 Backspace
+609 Previous mode
+610 F1..F8
+611 Load a predefined camera positon
+612 1..8
+613 Save a camera position
+
+614 Cursor keys
+615 Change position / Set cue ball
+616 Insert/Delete
+617 Change height
+618 Page up/Page down
+619 Move into/out of the scene
+620 r
+621 Replay last shot
+
+
+
+//Tutorial
+640 Welcome to BillardGL. 
+641 To show you the most significant features of BillardGL, we would like to guide you through a tutorial. You can quit this tutorial any time by using Escape or clicking on the logo on the lower right side.      
+//Um Ihnen die wichtigsten Elemente von BillardGL zu zeigen, wollen wir Sie durch ein Tutorial führen. Sie können das Tutorial jederzeit mit der Escape-Taste oder einem Klick auf das Logo links oben abbrechen.
+642 You are in the View mode now. This state is used to give an general view of the situation on the table.     
+//Sie befinden sich derzeit im Betrachten-Modus. Dieser Zustand dient vor allem dazu, sich einen Überblick über die Situation auf dem Tisch zu verschaffen.
+643 First of all you should try to move around; to do this use the arrow keys. You can also change the direction your viewport: Move your mouse while pressing the left button of it. 
+//Sie sollten zuerst versuchen, sich zu bewegen; benutzen Sie dazu die Pfeiltasten auf Ihrer Tastatur. Sie können auch die Richtung, in die Sie schauen, verändern. Halten Sie die linke Maustaste gedrückt und bewegen Sie gleichzeitig Ihre Maus.
+644 To enter the next state - Aim - press the space bar. 
+//Um in den nächsten Zustand, das Zielen, zu kommen, drücken Sie die Leertaste.
+
+650 You are in the Aim mode now. When you press the arrow keys or use the mouse to change your viewport now, you will realize that you are just moving around the cue ball.   
+//Jetzt befinden Sie sich im Zielen-Modus. Wenn Sie hier die Pfeiltasten drücken oder mit der Maus die Blickrichtung ändern, werden Sie merken, daß Sie sich nur noch um die weiße Kugel bewegen. 
+651 During the stroke the cue ball will move precisely where you are looking at. So if you see an object ball straight above the cue ball, this ball will be hit.                 
+//Beim Stoß wird die weiße Kugel sich genau in die Richtung bewegen, in die Sie schauen. Wenn Sie also eine Kugel direkt über der weißen Kugel sehen, wird die Weiße diese beim Stoß treffen.
+652 Now try to place the first one of the racked object ball right above the cue ball.
+//Versuchen Sie nun, die vorderste Kugel des aufgebauten Dreiecks genau über der weißen Kugel zu positionieren.
+653 To get into the next state - the swing mode - HOLD the space bar. The longer you press the key, the stronger your stroke will be. 
+//Um in den nächsten, den Ausholen-Zustand, zu kommen, HALTEN Sie die Leertaste GEDRÜCKT - die Dauer, für die Sie die Leertaste gedrückt halten, wird die Stärke des Stosses bestimmen.
+
+660 Now you are in the Swing mode. In this state you can readjust the direction you are aiming to by using your mouse or keyboard.    
+//Jetzt holen Sie aus. In diesem Zustand können Sie die Richtung, in die Sie stossen wollen, noch mit der Maus oder der Tastatur korrigieren.
+661 Please wait until the power bar at the right is loaded up to 3/4 - and then let the space bar go. 
+//Warten Sie, bis sich die Anzeige rechts zu etwa 3/4 gefüllt hat und lassen Sie dann die Leertaste los. 
+
+670 The stroke is performed. You are not able to interfere anymore, but you can watch the events on the table as if you were in the View mode.
+//Nun wird der Stoss ausgeführt. Eingreifen können Sie in das Geschehen zwar nicht mehr, aber Sie können sich wie im Betrachten-Modus die Situation nach Belieben anschauen. 
+671 Furthermore try out clicking the small balls on the lower edge of the display. The corresponding ball will be centered - an useful thing when looking for a special ball.    
+//Versuchen Sie auch mal, auf die kleinen Kugeln am unteren Bildschirmrand zu klicken. Die entsprechende Kugel wird dann zentriert - eine praktische Sache, wenn man eine Kugel sucht.
+//682 However you should try to shoot the cue ball at one of the six holes of the table...
+//Versuchen Sie doch jetzt einmal, die weiße Kugel in eines der sechs Löcher zu spielen.
+
+680 Whoops - looks like you have pocketed the cue ball.  
+//Hoppla - da haben Sie wohl die Weiße versenkt. 
+681 Then you may place it anywhere inside the head field as you wish. Use the arrow keys to do so. When you have choosen a position, you can make use of the space bar to change to the View mode again. 
+//Sie dürfen sie nun nach Belieben im Kopffeld positionieren - benutzen Sie dazu die Pfeiltasten. Wenn Sie sich eine Position ausgesucht haben, können Sie die Leertaste benutzen, um in den Betrachten-Modus zu wechseln. 
+682 Try out backspace there - you get back to the previous mode from nearly every state.   
+//Probieren Sie dort die Backspace-Taste aus, mit der Sie aus beinahe jedem Modus in den vorhergehenden zurückkommen. 
+683 Have a lot of fun playing BillardGL!
+//Viel Spaß beim Spielen mit BillardGL!
+
+690 Bravo! You just did your very first shot! 
+// Bravo! Sie haben gerade ihren allerersten Stoß geschafft!
+691 There are some more possibilities to move in BillardGL. See the effect of the keys "Insert", "Delete", "Page Up", "Page Down" and the Function Keys F1 to F8. You can also hold the right mouse button while moving the mouse. You will soon understand how all these keys work.
+//Es gibt noch weitere Möglichkeiten, sich in BillardGL zu bewegen. Probieren Sie einfach mal die Tasten "Einfügen", "Entfernen", Bild Auf" und "Bild Ab" sowie die Funktionstasten F1-F8 aus. Sie werden schnell verstehen, wie diese Tasten funkionieren.
+
+692 However you should try to shoot the cue ball at one of the six holes of the table.
+//Versuchen Sie auch, die weiße Kugel in eines der sechs Löcher zu spielen
+
+693 You may leave the tutorial by pressing the "Escape" Key or by clicking on the logo in the lower right corner. If you want to redo the tutorial, you can find it at Help/Tutorial in the Menu.
+// Sie können das Tutorial mit "Escape" oder einem Klick auf das Logo rechts unten beenden. Wenn Sie das Tutorial später noch einmal ansehen wollen, so finden Sie es unter Hilfe/Tutorial im Menu.
+
+694 Have much fun playing BillardGL!
+//Viel Spaß beim Spielen mit BillardGL!
+
+
+//Rules
+
+700 Rules
+
+710 Terms
+
+711 Cue ball
+712 The white ball used to play the other balls.
+
+713 Object balls 
+714 Colored and numbered balls, which are to be pocketed following the rules.
+
+715 Cushion
+716 Edge of the playing area where the balls are reflected. 
+
+717 Pocket
+718 Takes the balls dropped in the respective hole. 
+
+719 Foot spot 
+720 Spot, on which the first object ball lies when racking the balls. 
+
+721 Head field 
+722 Field behind the head string in which the cue ball is put at the start of the game. 
+
+723 Foul
+724 Action during the game breaking the rules. 
+
+725 Player at the table 
+726 Player having the current inning
+
+727 Inning
+728 The time from the first stroke till the change of the current player.
+
+740 General Rules
+
+741 Inning
+742 A player is at the table until he fails to pocket a legal ball.
+
+743 Fouls 
+744 The current player commits a foul if 1. the cue ball doesn't touch a legal object ball first, 2. the cue ball hits a legal object ball, but neither the cue ball nor the object ball touches a cushion or 3. the cue ball is pocketed. A player can commit only one foul per inning. If a player commits a foul, his inning ends and the his opponent has the cue ball in hand. 
+
+745 Cue ball in hand 
+746 If a player has the cue ball in hand he may place it anywhere on the table. If a player has the cue ball in hand behind the head string he may place it anywhere in the head field. Then he may play only an object ball outside the head field except he touches any cushion outside the head field. A violation of this rule is a foul.
+
+747 8-Ball Rules
+748 Object of the game 
+749 8-Ball is played with 15 numbered object balls and the cue ball. One player tries to pocket numbers 1 to 7 (solid colors) and his opponent tries to pocket numbers 9 to 15 (stripes). The player pocketing his group first and then legally pocketing the 8 ball wins the game.
+
+750 Legal break shot 
+751 To execute a legal break, the breaker (with the "cue ball in hand behind headstring") must either pocket an object ball, or drive at least four numbered object balls to the cushion. If he fails to make a legal break, it is a foul, and the incoming player has the option of accepting the table in position and shooting, or having the balls reracked and having the option of shooting the opening break himself or allowing the opponent player to rebreak. 
+
+752 It is a foul if the cue ball is pocketed on the break. The opponent then has "cue ball in hand behind headstring" and not "cue ball in hand" .
+
+753 If the 8-ball is pocketed on the break, the breaker may ask for a re-rack or have the 8-ball spotted and continue shooting.
+
+754 If the 8-ball and the cue ball are pocketed on the break, the breaker may ask for a re-rack or have the 8-ball spotted and continue shooting with "cue ball in hand behind the headstrin". The 8-ball is then placed on the foot spot. If this is not possible, e.g. another object ball is on that spot, then it is placed on the footstring as close as possible to the foot spot. 
+
+755 Open table 
+756 The table is "open" when the groups (solid or stripes) have not been determined yet.
+
+757 Legal object balls 
+758 All object balls are legal if the "table is open". If a choice of group has already been made then only the object balls of one's group are legal object balls. The 8-ball only is a legal object ball if all balls of one's group are pocketed.
+
+759 Choice of group 
+760 The group is chosen after the break with the first pocketed object ball only if the 8-ball hasn't been scratched. 
+
+761 Loss of game 
+762 A player loses the game, if he commits one of the following acts: 1. He plays a foul while he pockets the 8-ball, 2. he pockets the 8-ball on the same stroke as the last of his group of balls or 3. he pockets the 8-ball before it is a legal object ball.
+
+770 9-Ball Rules 
+771 Objective of the game
+772 9-Ball is played with the nine object balls numbered with 1 to 9 and the cue ball. On each shot the first ball the cue ball contacts must be the lowest-numbered ball on the table. The object balls need not be pocketed in order. A player remains at the table as long as he legally pockets object balls, doesn't commit a foul or wins the game by legally pocketing the 9-ball. 
+
+773 Legal break shot 
+774 To execute a legal break, the breaker (with the "cue ball in hand behind headstring") must either pocket an object ball, or drive at least four numbered object balls to the cushion. If he fails to make a legal break, it is a foul, and the incoming player has the option of accepting the table in position and shooting, or having the balls re-racked and having the option of shooting the opening break himself or allowing the opponent to rebreak. 
+775 It is a foul if the cue ball is pocketed on the break. The opponent then has cue ball in hand. 
+
+776 9-ball pocketed while commiting a foul
+777 If the 9-ball is pocketed while the current player commits a foul the 9-ball is respotted on the foot spot. If this is not possible, e.g. because of another object ball, it is placed on the footstring as close as possible to the foot spot. 
+
+778 Legal object balls 
+779 The object ball with the lowest number is the only legal object ball. 
+
+780 Three consecutive fouls
+781 If a player fouls three times on three successive shots without making an intervening legal shot, he loses the game. 
+
+782 End of game 
+783 The game is finished at the end of a legal shot which pockets the 9-ball or when a player made three consecutive fouls.
+
+790 Special
+791 Edition
+
+990 €   
+991 Ihnen fehlt eine Sprache? Fügen Sie sie hinzu!
+992 Anleitung auf http://www.BillardGL.de/
