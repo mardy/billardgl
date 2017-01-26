@@ -4,8 +4,8 @@
 // Modified by Volker Blanz, 25.4.2001
 //
 
-#include <iostream.h>
-#include <fstream.h>
+#include <iostream>
+#include <fstream>
 #include <stdio.h>
 #include <string.h>
 #include "LA.h"
@@ -101,7 +101,7 @@ void readData(FMatrix &r, FMatrix &g, FMatrix &b, FILE *f, BITMAPINFOHEADERX bi)
     buffer =  new DWORDX[w*h*3];
     switch(nbits) {
     case 1: {
-      //cerr <<  "Sorry, 1 bit Images not supported yet!" << endl;
+      //std::cerr <<  "Sorry, 1 bit Images not supported yet!" << std::endl;
 	return;
     }
     case 4: {
@@ -110,7 +110,7 @@ void readData(FMatrix &r, FMatrix &g, FMatrix &b, FILE *f, BITMAPINFOHEADERX bi)
 	int k;
 		
 	if(comp==BI_RLE4) {
-	  //cerr << "Sorry, compressed Images not supported yet!\n" << endl;
+	  //std::cerr << "Sorry, compressed Images not supported yet!\n" << std::endl;
 	    return;
 	}
 	/* read colormap */
@@ -139,7 +139,7 @@ void readData(FMatrix &r, FMatrix &g, FMatrix &b, FILE *f, BITMAPINFOHEADERX bi)
     case 8: {
 	BYTEX idx;
 	if(comp==BI_RLE8) {
-	  //cerr << "Sorry, compressed Images not supported yet!\n" << endl;
+	  //std::cerr << "Sorry, compressed Images not supported yet!\n" << std::endl;
 	    return;
 	}
 	/* read colormap */
@@ -179,7 +179,7 @@ void readData(FMatrix &r, FMatrix &g, FMatrix &b, FILE *f, BITMAPINFOHEADERX bi)
     } /* case 24 */ 
 			 
     default: {
-      //cerr << "There occured an failure while reading the Imagedata" << endl;
+      //std::cerr << "There occured an failure while reading the Imagedata" << std::endl;
     }
     } /* switch(nbits) */	 
 			 
@@ -204,11 +204,11 @@ void readData(FMatrix &r, FMatrix &g, FMatrix &b, FILE *f, BITMAPINFOHEADERX bi)
 void printFileHeader(BITMAPFILEHEADERX h) {
   h=h;
   /*
-    cout << "BitmapFileHeader" << endl;
-    cout << "\tSize.............." <<  h.bfSize << endl;
-    cout << "\tReserved1........." << h.bfReserved1 << endl;
-    cout << "\tReserved2........." << h.bfReserved2 << endl;
-    cout << "\tOffsetBits........" << h.bfOffBits << endl;
+    cout << "BitmapFileHeader" << std::endl;
+    cout << "\tSize.............." <<  h.bfSize << std::endl;
+    cout << "\tReserved1........." << h.bfReserved1 << std::endl;
+    cout << "\tReserved2........." << h.bfReserved2 << std::endl;
+    cout << "\tOffsetBits........" << h.bfOffBits << std::endl;
   */
 }
 
@@ -216,17 +216,17 @@ void printInfoHeader(BITMAPINFOHEADERX h) {
   h=h;
   /*
     cout << "BitmapInfoHeader\n";
-    cout << "\tSize.............." << h.biSize << endl;
-    cout << "\tWidth............." << h.biWidth << endl;
-    cout << "\tHeight............" << h.biHeight << endl;
-    cout << "\tPlanes............" << h.biPlanes << endl;
-    cout << "\tBitCount.........." << h.biBitCount << endl;
-    cout << "\tCompression......." << h.biCompression << endl;
-    cout << "\tSizeImage........." << h.biSizeImage << endl;
-    cout << "\tXPelsPerMeter....." << h.biXPelsPerMeter << endl;
-    cout << "\tYPelsPerMeter....." << h.biYPelsPerMeter << endl;
-    cout << "\tColorsUsed........" << h.biClrUsed << endl;
-    cout << "\tColorsImportant..." << h.biClrImportant << endl;
+    cout << "\tSize.............." << h.biSize << std::endl;
+    cout << "\tWidth............." << h.biWidth << std::endl;
+    cout << "\tHeight............" << h.biHeight << std::endl;
+    cout << "\tPlanes............" << h.biPlanes << std::endl;
+    cout << "\tBitCount.........." << h.biBitCount << std::endl;
+    cout << "\tCompression......." << h.biCompression << std::endl;
+    cout << "\tSizeImage........." << h.biSizeImage << std::endl;
+    cout << "\tXPelsPerMeter....." << h.biXPelsPerMeter << std::endl;
+    cout << "\tYPelsPerMeter....." << h.biYPelsPerMeter << std::endl;
+    cout << "\tColorsUsed........" << h.biClrUsed << std::endl;
+    cout << "\tColorsImportant..." << h.biClrImportant << std::endl;
   */
 }
 
@@ -242,13 +242,13 @@ bool loadBMP(FMatrix& r, FMatrix& g, FMatrix& b, const char* fname) {
   f = fopen(ffname, "rb");
   
   if(!f) {
-    cerr << "unable to open " << ffname << "!" << endl;
+    std::cerr << "unable to open " << ffname << "!" << std::endl;
     return false;
   }
 
    
   if(!checkMagicKey(f)) { 
-    cerr << ffname << " is not a bitmap-file." << endl; 
+    std::cerr << ffname << " is not a bitmap-file." << std::endl; 
     return false; 
   }   
   
@@ -304,8 +304,8 @@ bool saveBMP(FMatrix& r, FMatrix& g, FMatrix& b, const char* fname) {
 
   if(w != g.width() || w != b.width() ||
      h != g.height() || h != b.height()) {
-    //cerr << "Failure in saveBMP(): ";
-    //cerr << "all three images must have the same size!" << endl;
+    //std::cerr << "Failure in saveBMP(): ";
+    //std::cerr << "all three images must have the same size!" << std::endl;
   }
  
 
