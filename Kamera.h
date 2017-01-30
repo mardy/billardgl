@@ -59,6 +59,3 @@ class Kamera {
   GLint KameraNummer;  
 };
 
-extern class Kugel Kugel[16];
-
-
