@@ -1,7 +1,8 @@
 void LSupdateGL();
 void LSidle();
 
-extern GLint AktuellesFenster, KugelAufloesung,
+extern int AktuellesFenster;
+extern GLint KugelAufloesung,
   Texturgroesse, TischTexturgroesse, AmbientesLicht, 
   TischLampen, GrueneLampe, Reflektionen, 
   AnzeigeTexturgroesse, Spiel,
