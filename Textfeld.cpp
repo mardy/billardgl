@@ -168,7 +168,7 @@ void Textfeld::Initialisiere(GLint DLA){
   Horchen=0;
 }  
 
-void Textfeld::Initialisiere(GLint DLA, char TextZ[]){
+void Textfeld::Initialisiere(GLint DLA, const char *TextZ){
   Initialisiere(DLA);
   SetzeText(TextZ);
 }
@@ -245,7 +245,7 @@ void Textfeld::Positioniere(GLfloat X,GLfloat Y,GLfloat H,GLint A){
 }
 
 
-void Textfeld::SetzeText(char TextZ[]){
+void Textfeld::SetzeText(const char *TextZ){
   int i=0;
   while (TextZ[i] && i<1999) {
     Zeichenkette[i]=TextZ[i];

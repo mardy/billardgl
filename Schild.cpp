@@ -31,8 +31,8 @@ Schild::Schild() {
 }
 
 void Schild::Initialisiere(GLint TexGr,
-			   char Name[],
-			   char AlphaName[]){
+			   const char *Name,
+			   const char *AlphaName){
   FMatrix texr,texg,texb,texa;     // Matrix-Bilder, in die die Textur kommt
   if (!SchildIndex) {
     SchildIndex=glGenLists(1);

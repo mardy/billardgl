@@ -7,7 +7,7 @@ class Schild {
   void Initialisiere(GLint,char[]);
   void InitialisiereBuchstabe(GLint,char[]);
   void Initialisiere(GLint,char[],char);
-  void Initialisiere(GLint,char[],char[]);
+  void Initialisiere(GLint,const char *,const char *);
   void male();
   void Positioniere(GLfloat,GLfloat,GLfloat,GLfloat);
   void PositioniereFix(GLfloat,GLfloat,GLfloat,GLfloat);

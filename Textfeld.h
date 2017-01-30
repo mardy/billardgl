@@ -3,12 +3,12 @@ class Textfeld {
   Textfeld();
   GLint dummyInitialisiere(GLint);
   void Initialisiere(GLint);
-  void Initialisiere(GLint,char[]);
+  void Initialisiere(GLint,const char *);
   void InitialisiereKDL(GLint,char[]);
   void male();
   void Positioniere(GLfloat,GLfloat,GLfloat,GLint);
   void PositioniereFix(GLfloat,GLfloat,GLfloat,GLint);
-  void SetzeText(char[]);
+  void SetzeText(const char *);
   void SetzeTextKDL(char[]);
   GLint Zeichen(char);
   char* Text();
