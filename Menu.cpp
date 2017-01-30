@@ -7,6 +7,7 @@
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h> //2CHANGE wieder raus wenn kein printf mehr drin
+#include <cstring>
 #include <GL/glut.h>
 
 #include "LA.h"                // Zum Handling von .bmp-Files bzw. Matrix-Bildern
@@ -106,10 +107,8 @@ void Menu::ladeSprache(GLint Sprache) {
   if (f) {
     GLint nummer;
     while (!feof(f)) {
-      for (int j=0 ; j<2000 ; j++ ) {
-	temp[j]=0;
-	wort[j]=0;
-      }
+      std::memset(wort, 0, sizeof(wort));
+      std::memset(temp, 0, sizeof(temp));
       fgets(temp,2000,f);
       int i=0;
       while (temp[i]) i++;
