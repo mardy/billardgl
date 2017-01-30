@@ -112,7 +112,8 @@ void Menu::ladeSprache(GLint Sprache) {
       fgets(temp,2000,f);
       int i=0;
       while (temp[i]) i++;
-      while ((temp[--i]==10 || temp[i]==13 || temp[i]==32) && i) temp[i]=0;
+      if (i != 0) i--;
+      while ((temp[i]=='\n' || temp[i]=='\r' || temp[i]==' ') && i) temp[i]='\0';
       if (sscanf(temp,"%d %n",&nummer,&index)<1) continue;
 
       //printf("."); fflush(stdout);
