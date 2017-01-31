@@ -122,8 +122,9 @@ void KommandoZeilenParameter(int argc,char **argv) {
 
   // Titeltext
   //#ifndef _WIN32
+  #ifndef macintosh
   printf("\n BillardGL (C) 2001, 2002 Tobias Nopper, Stefan Disch, Martina Welte\n\n");
-  //#endif
+  #endif
 
   //Defaultwerte
   Texturgroesse        = 2;
