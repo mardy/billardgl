@@ -7,6 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include "LA.h"
 #include "Namen.h"
@@ -237,7 +238,20 @@ bool loadBMP(FMatrix& r, FMatrix& g, FMatrix& b, const char* fname) {
   BITMAPINFOHEADERX iheader;
 
   char ffname[60];
+#ifdef macintosh
+  sprintf(ffname,":%s",fname);
+#else
   sprintf(ffname,"%s%s",PFAD,fname);
+#endif
+
+#ifdef macintosh
+  char *slash;
+  while ((slash = strchr(ffname, '/')) != NULL)
+  {
+    *slash = ':';
+  }
+#endif
+
   //printf("%s%s\n",PFAD,fname);
   f = fopen(ffname, "rb");
   

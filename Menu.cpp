@@ -4,6 +4,7 @@
 **
 *****************************************************************************/
 
+#include <iostream>
 #include <math.h>
 #include <stdlib.h>
 #include <stdio.h> //2CHANGE wieder raus wenn kein printf mehr drin
@@ -97,7 +98,11 @@ void Menu::ladeSprache(GLint Sprache) {
   FILE *f;
   char dateiname[1000];
 #ifndef _WIN32
+#ifdef macintosh
+  sprintf(dateiname,":lang:%i.lang",Sprache);
+#else
   sprintf(dateiname,"lang/%s%i.lang",PFAD,Sprache);
+#endif
   f=fopen(dateiname,"r");
 #endif
 #ifdef _WIN32
