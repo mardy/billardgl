@@ -2328,7 +2328,9 @@ void Menu::SignalAusfuehrung(GLint Signal) {
       for (GLint dl=0 ; dl < 1000 ; dl++ ) {
 	if (!TextfeldArray[dl]) continue;
 	TextfeldArray[dl]->GeneriereDisplayList();
+#ifndef macintosh
 	printf("."); fflush(stdout);
+#endif
       }
       if (Sprache) SetzeMenuZustand(EINSTELLUNGEN);
       else SignalAusfuehrung(S_H_TUTORIAL);
