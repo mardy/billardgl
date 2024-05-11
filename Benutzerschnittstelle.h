@@ -6,6 +6,7 @@
 
 void Maus(int,int,int,int);
 void Bewegung(int,int);
+void Joystick(unsigned int, int, int, int);
 void Taste(unsigned char,int,int);
 void TasteLos(unsigned char,int,int);
 void Sondertaste(int,int,int);

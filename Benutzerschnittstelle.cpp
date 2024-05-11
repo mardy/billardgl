@@ -207,6 +207,38 @@ void Bewegung(int x, int y) {
   MouseLookLast_y=y;
 }
 
+void Joystick(unsigned int buttons, int x, int y, int z)
+{
+    static unsigned int buttons_old = 0;
+    unsigned int changed = buttons ^ buttons_old;
+    unsigned int pressed = changed & buttons;
+    unsigned int released = changed & ~buttons;
+    buttons_old = buttons;
+    unsigned char key = 0;
+
+    if (changed & 1) {
+        key = ' ';
+    }
+
+    Taste_Pfeil_Rechts = Taste_Pfeil_Links = Taste_Pfeil_Oben = Taste_Pfeil_Unten = 0;
+    if (x > 10) {
+      Taste_Pfeil_Rechts = 1;
+    } else if (x < -10) {
+      Taste_Pfeil_Links = 1;
+    }
+
+    if (y > 10) {
+      Taste_Pfeil_Oben = 1;
+    } else if (y < -10) {
+      Taste_Pfeil_Unten = 1;
+    }
+
+    if (key) {
+        if (pressed) Taste(key, 0, 0);
+        else TasteLos(key, 0, 0);
+    }
+}
+
 //Callback Funktion: Reaktion auf Tastendruck
 void Taste( unsigned char keyPressed, int x, int y )
 {

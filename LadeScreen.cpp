@@ -154,6 +154,7 @@ void LSidle() {
     //Callbacks setzen: Reaktion auf Mausklicks und -bewegungen, Tastaturaktivitäten
     glutMouseFunc(Maus);
     glutMotionFunc(Bewegung);
+    glutJoystickFunc(Joystick, 10);
     glutKeyboardFunc(Taste);
     glutKeyboardUpFunc(TasteLos);
     glutSpecialFunc(Sondertaste);
