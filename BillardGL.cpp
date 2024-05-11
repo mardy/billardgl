@@ -10,6 +10,7 @@
 #include <GL/glut.h>
 #include <math.h>
 #include <string.h>
+#include <unistd.h>
 
 #include "Textfeld.h"
 #include "Schild.h"
@@ -266,6 +267,10 @@ int main(int argc, char **argv)
 
   glutInit(&argc, argv);
 
+#if defined(__wii__) || defined(__gamecube__)
+  setenv("HOME", "/apps/billardgl", 1);
+  chdir("/apps/billardgl");
+#endif
   KommandoZeilenParameter(argc,argv);
   
   for (int i=0;i<16;i++) {
