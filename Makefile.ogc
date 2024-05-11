@@ -1,0 +1,169 @@
+#############################################################################
+# Linux Makefile for building BillardGl  Tobias Nopper 2001
+#     Project: BillardGL
+#############################################################################
+
+####### Compiler, tools and options
+
+CC	=	gcc
+CXX	=	g++
+CFLAGS	=	-pipe -Wall -W -DNO_DEBUG -g
+CXXFLAGS=	-pipe -Wall -W -DNO_DEBUG -g 
+INCPATH	=	-I/usr/X11R6/include 
+LIBS	=	-L/usr/X11R6/lib -lGL -lGLU -lglut -lm
+
+include $(DEVKITPPC)/wii_rules
+## -lqgl -lGLU
+
+DEPSDIR := $(CURDIR)
+BUILD := build
+CFLAGS = $(shell pkg-config --cflags glut) $(MACHDEP) -D__wii__
+CXXFLAGS = $(CFLAGS)
+LINK	=	$(CXX)
+LFLAGS	= -g $(MACHDEP) -Wl,-Map,$(notdir $@).map
+LIBS := $(shell pkg-config --libs glut opengl) -L$(LIBOGC_LIB) -lwiiuse -lbte -lwiikeyboard -lfat -logc -lm
+
+TAR	=	tar -cf
+GZIP	=	gzip -9f
+
+####### Files
+
+HEADERS =	Anzeige.h\
+		Beleuchtung.h\
+		Benutzerschnittstelle.h\
+		BillardGL.h\
+		Einsetzen.h\
+		Handling.h\
+		Kamera.h\
+		KommandoZeilenParameter.h\
+		Kugel.h\
+		LA.h\
+		Menu.h\
+		Namen.h\
+		Netzwerk.h\
+		Physik.h\
+		SchattenKreis.h\
+		Schiedsrichter.h\
+		Schild.h\
+		SpielfeldAufbau.h\
+		Textfeld.h\
+		Tisch.h\
+		Tischfunktionen.h\
+		Zeit.h\
+		bmp.h\
+		createTexture.h\
+		kugeltabellen.h\
+		viertelLoch.h\
+		LadeScreen.h
+
+SOURCES =	Anzeige.cpp\
+		Beleuchtung.cpp\
+		Benutzerschnittstelle.cpp\
+		BillardGL.cpp\
+		Einsetzen.cpp\
+		Handling.cpp\
+		Kamera.cpp\
+		KommandoZeilenParameter.cpp\
+		Kugel.cpp\
+		LA.cpp\
+		Menu.cpp\
+		Netzwerk.cpp\
+		Physik.cpp\
+		SchattenKreis.cpp\
+		Schiedsrichter.cpp\
+		Schild.cpp\
+		SpielfeldAufbau.cpp\
+		Textfeld.cpp\
+		Tisch.cpp\
+		Tischfunktionen.cpp\
+		Zeit.cpp\
+		bmp.cpp\
+		createTexture.cpp\
+		kugeltabellen.cpp\
+		viertelLoch.cpp\
+		LadeScreen.cpp
+
+OBJECTS =	Anzeige.o\
+		Beleuchtung.o\
+		Benutzerschnittstelle.o\
+		BillardGL.o\
+		Einsetzen.o\
+		Handling.o\
+		Kamera.o\
+		KommandoZeilenParameter.o\
+		Kugel.o\
+		LA.o\
+		Netzwerk.o\
+		Menu.o\
+		Physik.o\
+		SchattenKreis.o\
+		Schiedsrichter.o\
+		Schild.o\
+		SpielfeldAufbau.o\
+		Textfeld.o\
+		Tisch.o\
+		Tischfunktionen.o\
+		Zeit.o\
+		bmp.o\
+		createTexture.o\
+		kugeltabellen.o\
+		viertelLoch.o\
+		LadeScreen.o
+
+INTERFACES =	
+UICDECLS =	
+UICIMPLS =	
+SRCMOC	=	
+OBJMOC	=	
+DIST	=	
+TARGET	=	BillardGL.elf
+TARGET_DOL	=	BillardGL.dol
+INTERFACE_DECL_PATH = .
+
+####### Implicit rules
+
+.SUFFIXES: .cpp .cxx .cc .C .c
+
+.cpp.o:
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o $@ $<
+
+.cxx.o:
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o $@ $<
+
+.cc.o:
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o $@ $<
+
+.C.o:
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o $@ $<
+
+.c.o:
+	$(CC) -c $(CFLAGS) $(INCPATH) -o $@ $<
+
+####### Build rules
+
+
+all: $(TARGET_DOL)
+
+$(TARGET): $(UICDECLS) $(OBJECTS) $(OBJMOC) 
+	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJMOC) $(LIBS)
+
+dist:
+	$(TAR) BillardGL.tar BillardGL.pro $(SOURCES) $(HEADERS) $(INTERFACES) $(DIST)
+	$(GZIP) BillardGL.tar
+
+clean:
+	-rm -f $(OBJECTS) $(OBJMOC) $(SRCMOC) $(UICIMPLS) $(UICDECLS) $(TARGET) $(TARGET_DOL)
+	-rm -f *~ core
+
+install: 
+	-cp BillardGL /usr/X11R6/bin/BillardGL
+	-cp BillardGL /usr/X11R6/bin/billardGL
+	-mkdir /usr/share/BillardGL
+	-cp -R Texturen /usr/share/BillardGL
+	-mkdir /usr/share/doc/packages/BillardGL
+	-cp README /usr/share/doc/packages/BillardGL
+
+####### Sub-libraries
+
+
+
