@@ -264,6 +264,8 @@ int main(int argc, char **argv)
 { 
   //char string[10];  
 
+  glutInit(&argc, argv);
+
   KommandoZeilenParameter(argc,argv);
   
   for (int i=0;i<16;i++) {
@@ -273,7 +275,6 @@ int main(int argc, char **argv)
   KugelnImSpiel[0]=0;
 
   //GLUT initialisieren, Fenster setzen
-  glutInit(&argc, argv);	
   glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
   if (FullScreen) {
     char temp[20];
