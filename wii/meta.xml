@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+  <name>BillardGL</name>
+  <coder>T. Nopper, S. Disch, M. Welte</coder>
+  <version>1.75</version>
+  <release_date>20240512212132</release_date>
+  <short_description>3D pool billiard simulator</short_description>
+  <long_description>Do you love playing billiards, or have you ever wanted to learn how to play? This game lets you have the experience of playing pool and other similar games right from your home. It’s simple to learn and use, yet highly realistic. This app is a great tool for both playing for fun and improving your game.
+  </long_description>
+</app>
