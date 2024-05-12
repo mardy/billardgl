@@ -31,7 +31,7 @@ void Beleuchtung::Initialisiere(GLint AmbientesLicht, GLint Tischlampen, GLint G
 
   if (Tischlampen>=2) {
     //LampeMitte:  
-    GLfloat light_position1 [] = {63.5,0.0,100.0,1.0};
+    GLfloat light_position1 [] = {63.5,0.0,100.0,0.0};
     GLfloat white_light1[] = {Helligkeit,Helligkeit,Helligkeit,1};
     glLightfv(GL_LIGHT1,GL_POSITION, light_position1);
     glLightfv(GL_LIGHT1,GL_DIFFUSE,white_light1);
@@ -41,7 +41,7 @@ void Beleuchtung::Initialisiere(GLint AmbientesLicht, GLint Tischlampen, GLint G
 
   if (Tischlampen==1 || Tischlampen==3) {
     //LampeRechts:
-    GLfloat light_position0 [] = {0.0,0.0,100.0,1.0};  
+    GLfloat light_position0 [] = {0.0,0.0,100.0,0.0};
     GLfloat white_light0[] = {Helligkeit,Helligkeit,Helligkeit,1};
     glLightfv(GL_LIGHT0,GL_POSITION, light_position0);
     glLightfv(GL_LIGHT0,GL_DIFFUSE, white_light0);
@@ -51,7 +51,7 @@ void Beleuchtung::Initialisiere(GLint AmbientesLicht, GLint Tischlampen, GLint G
 
   if (Tischlampen>=2) {
     //LampeLinks:
-    GLfloat light_position2 [] = {-63.5,0.0,100.0,1.0};
+    GLfloat light_position2 [] = {-63.5,0.0,100.0,0.0};
     GLfloat white_light2[] = {Helligkeit,Helligkeit,Helligkeit,1};
     glLightfv(GL_LIGHT2,GL_POSITION, light_position2);
     glLightfv(GL_LIGHT2,GL_DIFFUSE, white_light2);
