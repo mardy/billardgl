@@ -1,0 +1,401 @@
+//Korean 906.lang by DDinghoya
+
+// Titel
+0 BillardGL 1.7
+1 ?2001, 2002 Tobias Nopper ?Stefan Disch ?Martina Welte
+2 프라이부르크의 알베르트 루드비히 대학교, 독일, 컴퓨터 과학 연구소
+3 http://www.BillardGL.de/
+4 BillardGL에는 보증이 전혀 제공되지 않습니다.
+
+//Main Menu
+10 메인 메뉴                        
+11 연습
+12 2인용
+13 네트워크 게임
+14 설정
+15 컴퓨터와의 대결
+16 종료
+17 도움말
+
+// Setup
+20 컨트롤
+21 비디오
+22 오디오
+23 언어
+
+//Help
+50 소개
+51 당구 규칙
+52 다음 페이지
+53 이전 페이지
+54 뒤로가기
+55 자습서
+56 키 결합
+
+//General
+100 뒤로가기
+101 적용
+102 확인
+103 취소
+
+//Training
+110 8 볼
+111 9 볼
+
+// Two Players
+120 1 플레이어 :
+121 2 플레이어 :
+
+//Quit
+160 예, 종료합니다
+
+//Network Game
+130 새로운 네트워크 게임
+131 게임 참여
+132 기다리세요...
+133 IP 주소
+134 접속
+
+//Out off the game
+170 다시 시작
+171 테이블 나가기
+
+//During the game
+180 Place White
+181 보기
+182 조준
+183 스윙
+184 샷
+185 승자입니다
+186 테이블에 있습니다
+187 그리고 큐볼을 손에 쥐고 있습니다
+188 헤드 스트링 뒤에
+189 원하는 작업 :
+190 다시 나란히
+191 8볼 찾기
+192 새로운 게임
+193 파울
+194 파울
+195 파울
+196 파울
+197 파울
+198 새로운 8볼 배열
+199 새로운 9볼 배열
+
+// Setup - Controls
+200 마우스 속도 :
+201 느림
+202 표준
+203 빠름
+204 매우 빠름
+205 X축 전환 : 
+206 예
+207 아니오
+208 Y축 전환 :
+209 예
+210 아니오
+
+// Setup - Video
+220 볼 형상:
+221 매우 낮음
+222 낮음
+223 표준
+224 높음
+
+230 볼 텍스쳐 :
+231 매우 낮음
+232 낮음
+233 표준
+234 높음
+
+240 테이블 텍스쳐 :
+241 매우 낮음
+242 낮음
+243 표준
+244 높음
+245 끔
+
+250 메뉴 텍스쳐 :
+251 낮음
+252 표준
+253 높음
+
+260 반사 :
+261 끔
+262 켬
+
+270 화면 해상도 :
+271 640x480
+272 800x600
+273 1024x768
+274 1280x1024
+275 1600x1200
+
+280 색심도 :
+281 16 비트
+282 24 비트
+283 32 비트
+
+290 그림자 :
+291 끔
+292 켬
+
+295 텍스처 보간 :
+296 끔
+297 빠름
+298 표준
+299 높음
+
+300 품질 :
+301 매우 빠름
+302 빠름
+303 표준
+304 높음
+305 매우 높음
+306 사용자 정의
+
+310 힌트
+311 새로운 화면 해상도는
+312 다음에 BillardGL을 시작할 때 적용됩니다.
+
+320 주변 밝기 :
+321 켬
+322 끔
+
+325 테이블 조명 :
+326 1 램프
+327 2 램프
+328 3 램프
+
+330 색상 번짐 :
+331 켬
+332 끔
+
+335 FPS :
+336 켬
+337 끔
+
+// Setup - Audio
+350 효과 볼륨
+351 끔
+352 10%
+353 20%
+354 30%
+355 40%
+356 50%
+357 60%
+358 70%
+359 80%
+360 90%
+361 100%
+
+370 음악 볼륨
+371 끔
+372 10%
+373 20%
+374 30%
+375 40%
+376 50%
+377 60%
+378 70%
+379 80%
+380 90%
+381 100%
+
+// Setup - Language
+400 언어
+
+// Judge
+450 합법적인 브레이크 샷이 없습니다.
+451 브레이크 샷에서 큐볼이 떨어졌습니다.
+452 적구가 터치되지 않았습니다.
+453 합법적인 적구가 먼저 터치되지 않았습니다.
+454 공이 떨어지지 않았고 쿠션이 닿지 않았습니다.
+455 헤드 필드에 있는 볼이 먼저 터치되었습니다.
+456 큐볼이 떨어졌습니다.
+
+// Names of Players and Fouls
+500 1 플레이어
+501 2 플레이어
+510 -
+511 -
+
+// Tastaturbelegung
+600 마우스 왼쪽 버튼 + 마우스 이동
+601 보기 변경
+602 마우스 오른쪽 버튼 + 마우스 이동
+603 위치 변경
+604 마우스 가운데 버튼
+605 다음 모드
+
+606 스페이스
+607 다음 모드
+608 백스페이스
+609 이전 모드
+610 F1..F8
+611 사전 정의된 카메라 위치 로드
+612 1..8
+613 카메라 위치 저장
+
+614 커서 키
+615 위치 변경 / 큐볼 설정
+616 삽입/삭제
+617 높이 변경
+618 페이지 위로/페이지 아래로
+619 장면 안으로/밖으로 이동
+620 r
+621 마지막 샷 다시보기
+
+
+
+//Tutorial
+640 BillardGL에 오신 것을 환영합니다.
+641 BillardGL의 가장 중요한 기능을 보여드리기 위해 자습서를 안내해 드리고자 합니다. Escape를 사용하거나 오른쪽 하단에 있는 로고를 클릭하면 언제든지 이 자습서를 종료할 수 있습니다.      
+//Um Ihnen die wichtigsten Elemente von BillardGL zu zeigen, wollen wir Sie durch ein Tutorial f?ren. Sie k?nen das Tutorial jederzeit mit der Escape-Taste oder einem Klick auf das Logo links oben abbrechen.
+642 현재 보기 모드에 있습니다. 이 상태는 테이블의 상황에 대한 일반적인 보기를 제공하는 데 사용됩니다.
+//Sie befinden sich derzeit im Betrachten-Modus. Dieser Zustand dient vor allem dazu, sich einen ?erblick ?er die Situation auf dem Tisch zu verschaffen.
+643 우선 주위를 돌아다니도록 노력해야 합니다. 이렇게 하려면 화살표 키를 사용하세요. 뷰포트 방향을 변경할 수도 있습니다. 뷰포트의 왼쪽 버튼을 누른 상태에서 마우스를 이동하세요.
+//Sie sollten zuerst versuchen, sich zu bewegen; benutzen Sie dazu die Pfeiltasten auf Ihrer Tastatur. Sie k?nen auch die Richtung, in die Sie schauen, ver?dern. Halten Sie die linke Maustaste gedr?kt und bewegen Sie gleichzeitig Ihre Maus.
+644 다음 상태 - 조준으로 들어가려면 스페이스바를 누르세요.
+//Um in den n?hsten Zustand, das Zielen, zu kommen, dr?ken Sie die Leertaste.
+
+650 이제 조준 모드에 있습니다. 이제 화살표 키를 누르거나 마우스를 사용하여 뷰포트를 변경하면 큐볼 주위를 움직이고 있다는 것을 알게 될 것입니다.
+//Jetzt befinden Sie sich im Zielen-Modus. Wenn Sie hier die Pfeiltasten dr?ken oder mit der Maus die Blickrichtung ?dern, werden Sie merken, da?Sie sich nur noch um die wei? Kugel bewegen. 
+651 스트로크하는 동안 큐볼은 당신이 보고 있는 곳으로 정확하게 움직일 것입니다. 따라서 큐볼 바로 위에 적구가 보인다면 이 공은 맞을 것입니다
+//Beim Sto?wird die wei? Kugel sich genau in die Richtung bewegen, in die Sie schauen. Wenn Sie also eine Kugel direkt ?er der wei?n Kugel sehen, wird die Wei? diese beim Sto?treffen.
+652 이제 큐볼 바로 위에 첫 번째 적구를 올려 놓으십시오.
+//Versuchen Sie nun, die vorderste Kugel des aufgebauten Dreiecks genau ?er der wei?n Kugel zu positionieren.
+653 다음 상태인 스윙 모드로 들어가려면 스페이스바를 길게 누르세요. 키를 오래 누를수록 스트로크가 더 강해집니다.
+//Um in den n?hsten, den Ausholen-Zustand, zu kommen, HALTEN Sie die Leertaste GEDR?KT - die Dauer, f? die Sie die Leertaste gedr?kt halten, wird die St?ke des Stosses bestimmen.
+
+660 이제 스윙 모드에 있습니다. 이 상태에서 마우스나 키보드를 사용하여 조준 방향을 재조정할 수 있습니다.
+//Jetzt holen Sie aus. In diesem Zustand k?nen Sie die Richtung, in die Sie stossen wollen, noch mit der Maus oder der Tastatur korrigieren.
+661 오른쪽 파워바가 3/4까지 로딩될 때까지 기다렸다가 스페이스바를 놓아주세요.
+//Warten Sie, bis sich die Anzeige rechts zu etwa 3/4 gef?lt hat und lassen Sie dann die Leertaste los. 
+
+670 스트로크가 수행됩니다. 더 이상 간섭할 수 없으며 마치 보기 모드에 있는 것처럼 테이블 위의 이벤트를 볼 수 있습니다.
+//Nun wird der Stoss ausgef?rt. Eingreifen k?nen Sie in das Geschehen zwar nicht mehr, aber Sie k?nen sich wie im Betrachten-Modus die Situation nach Belieben anschauen. 
+671 또한 디스플레이 하단 가장자리에 있는 작은 공을 클릭해 보세요. 해당 공은 중앙에 위치하므로 특별한 공을 찾을 때 유용합니다.
+//Versuchen Sie auch mal, auf die kleinen Kugeln am unteren Bildschirmrand zu klicken. Die entsprechende Kugel wird dann zentriert - eine praktische Sache, wenn man eine Kugel sucht.
+//682 하지만 테이블의 6개 구멍 중 하나에 큐볼을 쏘아야 합니다...
+//Versuchen Sie doch jetzt einmal, die wei? Kugel in eines der sechs L?her zu spielen.
+
+680 으악. 큐볼을 포켓에 넣은 것 같군요.
+//Hoppla - da haben Sie wohl die Wei? versenkt. 
+681 그런 다음 원하는 대로 헤드 필드 내부 어디에나 배치할 수 있습니다. 그렇게 하려면 화살표 키를 사용하십시오. 위치를 선택한 후 스페이스바를 사용하여 보기 모드로 다시 변경할 수 있습니다. 
+//Sie d?fen sie nun nach Belieben im Kopffeld positionieren - benutzen Sie dazu die Pfeiltasten. Wenn Sie sich eine Position ausgesucht haben, k?nen Sie die Leertaste benutzen, um in den Betrachten-Modus zu wechseln. 
+682 거기에서 백스페이스를 시도해 보세요. 거의 모든 상태에서 이전 모드로 돌아갈 수 있습니다.
+//Probieren Sie dort die Backspace-Taste aus, mit der Sie aus beinahe jedem Modus in den vorhergehenden zur?kkommen. 
+683 BillardGL을 즐겨보세요!
+//Viel Spa?beim Spielen mit BillardGL!
+
+690 브라보! 방금 첫 번째 샷을 완료했습니다!
+// Bravo! Sie haben gerade ihren allerersten Sto?geschafft!
+691 BillardGL에서 이동할 수 있는 가능성이 더 있습니다. "삽입", "삭제", "페이지 위로", "페이지 아래로" 키와 기능 키 F1~F8의 효과를 확인하세요. 마우스를 이동하는 동안 마우스 오른쪽 버튼을 누르고 있을 수도 있습니다. 이 모든 키가 어떻게 작동하는지 곧 이해하게 될 것입니다.
+//Es gibt noch weitere M?lichkeiten, sich in BillardGL zu bewegen. Probieren Sie einfach mal die Tasten "Einf?en", "Entfernen", Bild Auf" und "Bild Ab" sowie die Funktionstasten F1-F8 aus. Sie werden schnell verstehen, wie diese Tasten funkionieren.
+
+692 그러나 테이블의 6개 구멍 중 하나에 큐볼을 쏘도록 노력해야 합니다.
+//Versuchen Sie auch, die wei? Kugel in eines der sechs L?her zu spielen
+
+693 "Escape" 키를 누르거나 오른쪽 하단에 있는 로고를 클릭하여 자습서를 종료할 수 있습니다. 자습서를 다시 실행하려면 메뉴의 도움말/자습서에서 찾을 수 있습니다.
+// Sie k?nen das Tutorial mit "Escape" oder einem Klick auf das Logo rechts unten beenden. Wenn Sie das Tutorial sp?er noch einmal ansehen wollen, so finden Sie es unter Hilfe/Tutorial im Menu.
+
+694 BillardGL을 즐겨보세요!
+//Viel Spa?beim Spielen mit BillardGL!
+
+
+//Rules
+
+700 규칙
+
+710 조항
+
+711 큐볼
+712 다른 공을 플레이하는 데 사용되는 흰색 공입니다.
+
+713 적구 
+714 색깔이 있고 번호가 매겨진 공. 규칙에 따라 포켓에 넣어야 합니다.
+
+715 큐션
+716 공이 반사되는 경기장의 가장자리
+
+717 포켓
+718 해당 홀에 떨어진 공을 가져옵니다.
+
+719 풋 스팟
+720 공을 쌓을 때 첫 번째 적구가 놓여 있는 지점
+
+721 헤드 필드
+722 게임 시작 시 큐볼이 놓여지는 헤드 스트링 뒤의 필드
+
+723 파울
+724 게임 중 규칙을 위반하는 행위
+
+725 테이블의 플레이어
+726 현재 이닝을 진행 중인 플레이어
+
+727 이닝
+728 첫 번째 스트로크부터 현재 플레이어가 변경될 때까지의 시간
+
+740 일반 규칙
+
+741 이님
+742 플레이어는 합법적인 공을 포켓에 넣지 못할 때까지 테이블에 있어야 합니다.
+
+743 파울 
+744 현재 선수는 1. 수구가 적법한 적구에 먼저 닿지 않은 경우, 2. 수구가 적법한 적구에 맞았으나 수구도 적구도 쿠션에 닿지 않은 경우, 3. 큐에 해당하는 경우 파울을 범한 것입니다. 공이 포켓에 넣어졌습니다. 선수는 이닝당 단 한 번의 파울만 범할 수 있습니다. 선수가 파울을 범하면 이닝은 종료되고 상대는 수구를 손에 갖게 됩니다. 
+
+745 손에 큐볼
+746 플레이어가 큐볼을 손에 가지고 있다면 테이블 위 어느 곳에나 놓을 수 있습니다. 플레이어가 헤드 스트링 뒤에 큐볼을 손에 들고 있다면 헤드 필드의 어느 곳에나 큐볼을 놓을 수 있습니다. 그런 다음 그는 헤드 필드 밖의 쿠션에 닿는 경우를 제외하고 헤드 필드 밖에서 목적구만 플레이할 수 있습니다. 이 규칙을 위반하는 것은 파울입니다.
+
+747 8볼 규칙
+748 게임의 목적
+749 8볼은 번호가 매겨진 15개의 적구와 큐볼을 사용하여 플레이합니다. 한 플레이어는 1~7번(단색)의 포켓 번호를 시도하고 상대방은 9~15번(줄무늬)의 포켓 번호를 시도합니다. 자신의 그룹을 먼저 포켓에 넣은 다음 합법적으로 8번 공을 포켓에 넣은 플레이어가 게임에서 승리합니다.
+
+750 합법적인 브레이크 샷
+751 합법적인 브레이크를 실행하려면 브레이커("헤드스트링 뒤에 수구를 손에 쥐고")는 적구를 포켓에 넣거나 번호가 매겨진 적구 4개 이상을 쿠션에 넣어야 합니다. 만약 그가 합법적인 브레이크를 하지 못한다면 그것은 파울이고, 들어오는 선수는 테이블의 위치를 받아들이고 샷을 할 수 있는 선택권을 가지고 있습니다. 또는 공을 다시 쌓고 오프닝 브레이크를 스스로 쏘거나 상대 플레이어가 다시 브레이크하도록 허용하는 옵션을 갖습니다.
+
+752 브레이크 중에 수구가 포켓에 들어가면 파울입니다. 그러면 상대방은 "손에 큐볼"이 아닌 "헤드스트링 뒤에 손에 큐볼"을 가지고 있습니다.
+
+753 8번 공이 브레이크 중에 포켓에 들어간 경우 브레이커는 다시 랙을 요청하거나 8번 공을 스팟에 두고 계속해서 샷을 할 수 있습니다.
+
+754 브레이크 중에 8볼과 수구가 포켓에 들어간 경우 브레이커는 다시 랙을 요청하거나 8볼을 스팟팅하고 "헤드스트린 뒤에 손에 있는 수구"로 계속 샷을 할 수 있습니다. 그런 다음 8번 공을 풋 스팟에 놓습니다. 이것이 가능하지 않은 경우, 예를 들어 다른 적구가 그 지점에 있으면 발 지점에 최대한 가까운 발스트링에 놓입니다.
+
+755 오픈 테이블
+756 그룹(단색 또는 줄무늬)이 아직 결정되지 않은 경우 테이블은 "열려 있습니다".
+
+757 합법적인 적구 
+758 "테이블이 열려 있으면" 모든 적구는 합법적입니다. 이미 그룹을 선택했다면 해당 그룹의 적구만이 합벅적인 적구입니다. 8볼은 자신의 그룹의 모든 공이 포켓에 들어간 경우에만 합법적인 적구입니다.
+
+759 그룹 선택 
+760 8번 공이 긁히지 않은 경우에만 첫 번째 포켓된 적구로 휴식 후 그룹이 선택됩니다.
+
+761 게임의 패배
+762 플레이어가 다음 행위 중 하나를 범하면 게임에서 패배합니다: 1. 8번 공을 포켓하는 동안 파울을 범한 경우, 2. 자신의 그룹의 마지막 공과 동일한 스트로크로 8번 공을 포켓한 경우 또는 3. 8번 공이 합법적인 적구가 되기 전에 포켓에 넣은 경우.
+
+770 9볼 규칙 
+771 게임의 목적
+772 9볼은 1부터 9까지 번호가 매겨진 9개의 적구와 큐볼을 사용하여 플레이합니다. 각 샷에서 큐볼이 접촉하는 첫 번째 공은 테이블에서 가장 낮은 번호의 공이어야 합니다. 적구를 순서대로 포켓에 넣을 필요는 없습니다. 플레이어는 합법적으로 적구를 포켓하거나 파울을 범하지 않거나 합법적으로 9볼을 포켓하여 게임에서 승리하는 한 테이블에 남아 있습니다.
+
+773 합법적인 브레이크 샷
+774 합법적인 브레이크를 실행하려면 브레이커("헤드스트링 뒤에 수구를 손에 쥐고")는 적구를 포켓에 넣거나 번호가 매겨진 적구 4개 이상을 쿠션에 넣어야 합니다. 만약 그가 합법적인 브레이크를 하지 못한다면 그것은 파울이고, 들어오는 선수는 테이블의 위치를 받아들이고 슛을 할 수 있는 선택권을 가지고 있습니다. 또는 공을 다시 랙에 넣고 오프닝을 스스로 슛하거나 상대방이 다시 깰 수 있도록 하는 옵션을 선택할 수 있습니다. 
+775 브레이크 중에 수구가 포켓에 들어가면 파울입니다. 상대방은 손에 큐볼을 가지고 있습니다. 
+
+776 파울을 범하면서 9볼이 포켓되었습니다.
+777 현재 선수가 파울을 범한 동안 9번 공이 포켓되면 9번 공은 풋 스팟에 다시 위치됩니다. 이것이 가능하지 않은 경우, 예를 들어 또 다른 적구 때문에 풋 위치에 최대한 가깝게 발판에 놓입니다. 
+
+778 적법한 적구
+779 가장 낮은 숫자의 적구가 유일한 적법한 적구입니다.
+
+780 3회 연속 파울
+781 선수가 중간에 합법적인 샷을 하지 않고 연속 3개의 샷에서 세 번 파울을 하면 게임에서 패배합니다.
+
+782 게임 종료 
+783 9볼을 포켓에 넣는 합법적인 샷이 끝나거나 선수가 연속해서 3번의 파울을 범하면 게임이 종료됩니다.
+
+790 스페셜
+791 에디션
+
+990    
+991 언어가 없나요? 추가하세요!
+992 http://www.BillardGL.de/에 대한 지침
